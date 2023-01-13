@@ -3,9 +3,8 @@
 import * as React from "react";
 import * as ph from "@plasmicapp/host";
 
-import { ScreenVariantProvider } from "../components/plasmic/disuko_website/PlasmicGlobalVariant__Screen";
-import { ModeContext } from "../components/plasmic/disuko_website/PlasmicGlobalVariant__Mode";
-import { PlasmicMusic } from "../components/plasmic/disuko_website/PlasmicMusic";
+import { ScreenVariantProvider } from "../components/plasmic/disuko_website_v_2/PlasmicGlobalVariant__Screen";
+import { PlasmicMusic } from "../components/plasmic/disuko_website_v_2/PlasmicMusic";
 import { useRouter } from "next/router";
 
 function Music() {
@@ -26,14 +25,12 @@ function Music() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <ModeContext.Provider value={undefined}>
-      <ph.PageParamsProvider
-        params={useRouter()?.query}
-        query={useRouter()?.query}
-      >
-        <PlasmicMusic />
-      </ph.PageParamsProvider>
-    </ModeContext.Provider>
+    <ph.PageParamsProvider
+      params={useRouter()?.query}
+      query={useRouter()?.query}
+    >
+      <PlasmicMusic />
+    </ph.PageParamsProvider>
   );
 }
 

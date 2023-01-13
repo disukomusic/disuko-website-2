@@ -15,8 +15,10 @@
     "@plasmicapp/loader-nextjs": "^1.0.213",
     "@plasmicapp/react-web": "^0.2.138",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.100",
+    "@plasmicpkgs/plasmic-nav": "^0.0.63",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.93",
     "@plasmicpkgs/react-parallax-tilt": "^0.0.91",
+    "@plasmicpkgs/react-twitter-widgets": "^0.0.90",
     "@plasmicpkgs/react-youtube": "^7.13.96",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
@@ -26,6 +28,8 @@
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "typescript": "4.9.4"
   }
 }

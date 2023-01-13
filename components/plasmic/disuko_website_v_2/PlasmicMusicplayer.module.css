@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: none;
+  backdrop-filter: brightness(95%) blur(4px);
+  position: relative;
+  min-width: 0;
+  -webkit-backdrop-filter: brightness(95%) blur(4px);
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}

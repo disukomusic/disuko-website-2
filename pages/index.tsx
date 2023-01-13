@@ -3,9 +3,8 @@
 import * as React from "react";
 import * as ph from "@plasmicapp/host";
 
-import { ScreenVariantProvider } from "../components/plasmic/disuko_website/PlasmicGlobalVariant__Screen";
-import { ModeContext } from "../components/plasmic/disuko_website/PlasmicGlobalVariant__Mode";
-import { PlasmicHomepage } from "../components/plasmic/disuko_website/PlasmicHomepage";
+import { ScreenVariantProvider } from "../components/plasmic/disuko_website_v_2/PlasmicGlobalVariant__Screen";
+import { PlasmicHomepage } from "../components/plasmic/disuko_website_v_2/PlasmicHomepage";
 import { useRouter } from "next/router";
 
 function Homepage() {
@@ -26,14 +25,12 @@ function Homepage() {
   // Next.js Custom App component
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
-    <ModeContext.Provider value={undefined}>
-      <ph.PageParamsProvider
-        params={useRouter()?.query}
-        query={useRouter()?.query}
-      >
-        <PlasmicHomepage />
-      </ph.PageParamsProvider>
-    </ModeContext.Provider>
+    <ph.PageParamsProvider
+      params={useRouter()?.query}
+      query={useRouter()?.query}
+    >
+      <PlasmicHomepage />
+    </ph.PageParamsProvider>
   );
 }
 
