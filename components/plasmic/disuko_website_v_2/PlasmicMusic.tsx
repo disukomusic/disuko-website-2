@@ -178,7 +178,7 @@ function PlasmicMusic__RenderFunc(props: {
                     )}
                   >
                     {
-                      "i'm an edm producer and dj who enjoys cute sound design and jazz influence in music! some of my favorite genres are kawaii future bass, dubstep and happy hardcore. i hope you enjoy my music!"
+                      "i produce electronic music and also dj! i like making music with high energy and cute sounds! my main genes range from kawaii future bass to hardcore (and more). my inspirations include kawaii future bass producers like snail's house, hardcore producers like camellia, and rhythm game producers like tanger. i hope you enjoy listening to my music! "
                     }
                   </div>
                 </div>
