@@ -228,19 +228,6 @@
           "cssFilePath": "plasmic/disuko_website/PlasmicHeader2.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "mv-wbMPu_X",
-          "name": "FilmVideo",
-          "type": "managed",
-          "projectId": "wJAowqBqcWtGU49FNparet",
-          "renderModuleFilePath": "plasmic/disuko_website/PlasmicFilmVideo.tsx",
-          "importSpec": {
-            "modulePath": "../pages/filmvideo.tsx"
-          },
-          "cssFilePath": "plasmic/disuko_website/PlasmicFilmVideo.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         }
       ],
       "icons": [
@@ -395,7 +382,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "itBdcjth19Wasd6ngAYxWR",
@@ -424,7 +412,8 @@
           "name": "FollowWrapper",
           "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -443,7 +432,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "bsHvoheJaXyaeWhnCxRakT",
