@@ -1,0 +1,52 @@
+.root {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #ffffff;
+  width: 31px;
+  height: 30px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  flex-shrink: 0;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+}
+.svgglobal_mode_darkMode {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+}
+.svgisChecked {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg);
+}
+.root:hover .svg {
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1.2);
+  transform-style: preserve-3d;
+}
+.root:hover .svg * {
+  transform-style: preserve-3d;
+}
+.rootisDisabled:hover .svgisDisabled {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.rootisChecked:hover .svgisChecked {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(180deg) scaleX(1.2) scaleY(1.2)
+    scaleZ(1.2);
+  transform-style: preserve-3d;
+}
+.rootisChecked:hover .svgisChecked * {
+  transform-style: preserve-3d;
+}
+.root:active .svg {
+  transform: scaleX(0.9) scaleY(0.9) scaleZ(1);
+}
+.rootisChecked:active .svgisChecked {
+  transform: scaleX(0.9) scaleY(0.9) scaleZ(1) rotateX(0deg) rotateY(0deg)
+    rotateZ(180deg);
+}
