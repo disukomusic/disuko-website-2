@@ -45,8 +45,8 @@ import Menu2SvgIcon from "./icons/PlasmicIcon__Menu2Svg"; // plasmic-import: Oge
 import XsvgIcon from "./icons/PlasmicIcon__Xsvg"; // plasmic-import: LUQvvF4qlM/icon
 import HomesvgIcon from "./icons/PlasmicIcon__Homesvg"; // plasmic-import: L0zI9S_Iq6/icon
 import HeadphonessvgIcon from "./icons/PlasmicIcon__Headphonessvg"; // plasmic-import: yb2-zw2oZD/icon
-import ShirtsvgIcon from "./icons/PlasmicIcon__Shirtsvg"; // plasmic-import: BmJEOaCAlD/icon
 import LinksvgIcon from "./icons/PlasmicIcon__Linksvg"; // plasmic-import: CChSiJgS1z/icon
+import ShirtsvgIcon from "./icons/PlasmicIcon__Shirtsvg"; // plasmic-import: BmJEOaCAlD/icon
 
 export type PlasmicNavbar__VariantMembers = {};
 export type PlasmicNavbar__VariantsArgs = {};
@@ -63,8 +63,8 @@ export type PlasmicNavbar__OverridesType = {
   img?: p.Flex<typeof p.PlasmicImg>;
   home?: p.Flex<"a"> & Partial<LinkProps>;
   music?: p.Flex<"a"> & Partial<LinkProps>;
-  merch?: p.Flex<"a"> & Partial<LinkProps>;
   links?: p.Flex<"a"> & Partial<LinkProps>;
+  merch?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultNavbarProps {
@@ -175,21 +175,6 @@ function PlasmicNavbar__RenderFunc(props: {
             />
           </p.PlasmicLink>
 
-          <p.PlasmicLink
-            data-plasmic-name={"merch"}
-            data-plasmic-override={overrides.merch}
-            className={classNames(projectcss.all, projectcss.a, sty.merch)}
-            component={Link}
-            href={"https://merch.disuko.gay" as const}
-            platform={"nextjs"}
-            title={"merch" as const}
-          >
-            <ShirtsvgIcon
-              className={classNames(projectcss.all, sty.svg__b6MrX)}
-              role={"img"}
-            />
-          </p.PlasmicLink>
-
           {true ? (
             <p.PlasmicLink
               data-plasmic-name={"links"}
@@ -206,6 +191,21 @@ function PlasmicNavbar__RenderFunc(props: {
               />
             </p.PlasmicLink>
           ) : null}
+
+          <p.PlasmicLink
+            data-plasmic-name={"merch"}
+            data-plasmic-override={overrides.merch}
+            className={classNames(projectcss.all, projectcss.a, sty.merch)}
+            component={Link}
+            href={"https://merch.disuko.gay" as const}
+            platform={"nextjs"}
+            title={"merch" as const}
+          >
+            <ShirtsvgIcon
+              className={classNames(projectcss.all, sty.svg__b6MrX)}
+              role={"img"}
+            />
+          </p.PlasmicLink>
         </React.Fragment>
       }
       openButton={
@@ -220,13 +220,13 @@ function PlasmicNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "img", "home", "music", "merch", "links"],
+  root: ["root", "link", "img", "home", "music", "links", "merch"],
   link: ["link", "img"],
   img: ["img"],
   home: ["home"],
   music: ["music"],
-  merch: ["merch"],
-  links: ["links"]
+  links: ["links"],
+  merch: ["merch"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -237,8 +237,8 @@ type NodeDefaultElementType = {
   img: typeof p.PlasmicImg;
   home: "a";
   music: "a";
-  merch: "a";
   links: "a";
+  merch: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -306,8 +306,8 @@ export const PlasmicNavbar = Object.assign(
     img: makeNodeComponent("img"),
     home: makeNodeComponent("home"),
     music: makeNodeComponent("music"),
-    merch: makeNodeComponent("merch"),
     links: makeNodeComponent("links"),
+    merch: makeNodeComponent("merch"),
 
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,
