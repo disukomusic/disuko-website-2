@@ -144,22 +144,30 @@ function PlasmicTextInput__RenderFunc(props: {
       {
         path: "showStartIcon",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.showStartIcon
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.showStartIcon
+          : undefined
       },
       {
         path: "showEndIcon",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.showEndIcon
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.showEndIcon
+          : undefined
       },
       {
         path: "isDisabled",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.isDisabled
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
       {
         path: "color",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.color
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       }
     ],
     [$props, $ctx]
