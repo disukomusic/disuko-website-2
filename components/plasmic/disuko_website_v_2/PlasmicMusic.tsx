@@ -99,7 +99,7 @@ function PlasmicMusic__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicMusic.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -111,6 +111,32 @@ function PlasmicMusic__RenderFunc(props: {
           name="twitter:title"
           content={PlasmicMusic.pageMetadata.title}
         />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicMusic.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicMusic.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicMusic.pageMetadata.description}
+        />
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicMusic.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicMusic.pageMetadata.ogImageSrc}
+        />
+        <link ref="canonical" href={PlasmicMusic.pageMetadata.canonical} />
       </Head>
 
       <style>{`
@@ -524,10 +550,12 @@ export const PlasmicMusic = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "disuko - music",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
+      title: "disuko - music 🌸",
+      description:
+        "~i produce electronic music and also DJ! i like making music with high energy and cute sounds. my genres range from kawaii future bass to hardcore!",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
+      canonical: "https://disuko.gay/links"
     }
   }
 );

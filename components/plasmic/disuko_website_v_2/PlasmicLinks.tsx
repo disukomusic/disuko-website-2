@@ -113,7 +113,7 @@ function PlasmicLinks__RenderFunc(props: {
   return (
     <React.Fragment>
       <Head>
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <title key="title">{PlasmicLinks.pageMetadata.title}</title>
         <meta
           key="og:title"
@@ -125,6 +125,32 @@ function PlasmicLinks__RenderFunc(props: {
           name="twitter:title"
           content={PlasmicLinks.pageMetadata.title}
         />
+        <meta
+          key="description"
+          name="description"
+          content={PlasmicLinks.pageMetadata.description}
+        />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={PlasmicLinks.pageMetadata.description}
+        />
+        <meta
+          key="twitter:description"
+          name="twitter:description"
+          content={PlasmicLinks.pageMetadata.description}
+        />
+        <meta
+          key="og:image"
+          property="og:image"
+          content={PlasmicLinks.pageMetadata.ogImageSrc}
+        />
+        <meta
+          key="twitter:image"
+          name="twitter:image"
+          content={PlasmicLinks.pageMetadata.ogImageSrc}
+        />
+        <link ref="canonical" href={PlasmicLinks.pageMetadata.canonical} />
       </Head>
 
       <style>{`
@@ -949,10 +975,12 @@ export const PlasmicLinks = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "disuko - links",
-      description: "",
-      ogImageSrc: "",
-      canonical: ""
+      title: "disuko - links 🌸",
+      description:
+        "~social media platforms and other important links for the disuko youtube channel and streaming services.",
+      ogImageSrc:
+        "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
+      canonical: "https://disuko.gay/links"
     }
   }
 );
