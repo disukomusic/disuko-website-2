@@ -784,6 +784,16 @@
           "id": "8jKGqja_o",
           "name": "webpreview.jpg",
           "filePath": "../public/plasmic/disuko_website_v_2/images/webpreviewjpg.jpeg"
+        },
+        {
+          "id": "0rVo6Zf0e",
+          "name": "Untitled-1.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/untitled1Jpg.jpeg"
+        },
+        {
+          "id": "FSD7UoQDp",
+          "name": "Logo 2023.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/logo2023Png.png"
         }
       ],
       "indirect": false,
@@ -828,6 +838,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.203",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.203/dist/plasmic.schema.json"
+  "cliVersion": "0.1.204",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.204/dist/plasmic.schema.json"
 }

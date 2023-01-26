@@ -195,12 +195,13 @@
   top: auto;
   text-align: center;
   color: var(--token-SvhC9Dosd);
-  font-family: "Keqima";
+  font-family: "ABeeZee", sans-serif;
   z-index: 1;
   font-size: 34px;
   right: auto;
   width: auto;
   align-self: center;
+  padding-right: 0px;
   margin: 5px;
 }
 .greeting2 {
@@ -211,10 +212,11 @@
   left: auto;
   top: auto;
   text-align: center;
-  color: var(--token-ADY-EXbQV);
+  color: var(--token-SvhC9Dosd);
   font-family: "Keqima";
   z-index: 1;
   font-size: 24px;
+  font-weight: 400;
   margin: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -465,7 +467,7 @@
   top: auto;
   text-align: right;
   color: var(--token-SvhC9Dosd);
-  font-family: "Keqima";
+  font-family: "ABeeZee", sans-serif;
   z-index: 1;
   font-size: 34px;
   width: auto;
@@ -582,7 +584,7 @@
   top: auto;
   text-align: right;
   color: var(--token-SvhC9Dosd);
-  font-family: "Keqima";
+  font-family: "ABeeZee", sans-serif;
   z-index: 1;
   font-size: 34px;
   width: auto;
@@ -697,7 +699,7 @@
   top: auto;
   text-align: right;
   color: var(--token-SvhC9Dosd);
-  font-family: "Keqima";
+  font-family: "ABeeZee", sans-serif;
   z-index: 1;
   font-size: 34px;
   width: auto;
@@ -1616,12 +1618,13 @@
   top: auto;
   text-align: center;
   color: var(--token-ADY-EXbQV);
-  font-family: "Keqima";
+  font-family: "ABeeZee", sans-serif;
   z-index: 1;
   font-size: 34px;
   right: auto;
   width: auto;
   align-self: center;
+  font-weight: 400;
   margin: 10px;
 }
 .main__a7HYo {
@@ -1637,6 +1640,7 @@
   z-index: 1;
   font-size: 24px;
   align-self: center;
+  font-weight: 600;
   min-width: 0;
   margin: 10px;
 }

@@ -36,7 +36,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: _De9lHvhQM/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
-import MusicSlides from "../../MusicSlides"; // plasmic-import: 1BhlLFOXJu/component
+import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import Footer from "../../Footer"; // plasmic-import: phAOjgqEmd/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -58,8 +58,10 @@ export type PlasmicMusic__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   main?: p.Flex<"div">;
   reveal?: p.Flex<typeof Reveal>;
-  freeBox?: p.Flex<"div">;
-  musicSlides?: p.Flex<typeof MusicSlides>;
+  greeting7?: p.Flex<"div">;
+  greeting8?: p.Flex<"div">;
+  greeting9?: p.Flex<"div">;
+  greeting10?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -155,11 +157,7 @@ function PlasmicMusic__RenderFunc(props: {
                 effect={"slide" as const}
                 triggerOnce={true}
               >
-                <div
-                  data-plasmic-name={"freeBox"}
-                  data-plasmic-override={overrides.freeBox}
-                  className={classNames(projectcss.all, sty.freeBox)}
-                >
+                <div className={classNames(projectcss.all, sty.freeBox__yb5C)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -184,11 +182,214 @@ function PlasmicMusic__RenderFunc(props: {
                 </div>
               </Reveal>
 
-              <MusicSlides
-                data-plasmic-name={"musicSlides"}
-                data-plasmic-override={overrides.musicSlides}
-                className={classNames("__wab_instance", sty.musicSlides)}
-              />
+              <div className={classNames(projectcss.all, sty.freeBox__a1LL)}>
+                <div className={classNames(projectcss.all, sty.freeBox__r9R4U)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___5SwEn
+                    )}
+                  >
+                    {"latest release"}
+                  </div>
+
+                  <Tilt
+                    className={classNames("__wab_instance", sty.tilt___6SVvz)}
+                    glareEnable={false}
+                    tiltMaxAngleX={10 as const}
+                    tiltMaxAngleY={10 as const}
+                    tiltReverse={true}
+                    trackOnWindow={false}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__ezl1
+                      )}
+                      component={Link}
+                      href={
+                        "https://www.youtube.com/watch?v=dGwWZ-y0VbU" as const
+                      }
+                      platform={"nextjs"}
+                      target={"_blank" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__govQ
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__im7MP)}
+                          displayHeight={"219px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"100%" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/disuko_website_v_2/images/untitled1Jpg.jpeg",
+                            fullWidth: 1920,
+                            fullHeight: 1080,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qcUc
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"greeting7"}
+                          data-plasmic-override={overrides.greeting7}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.greeting7
+                          )}
+                        >
+                          {"dino hop"}
+                        </div>
+
+                        <div
+                          data-plasmic-name={"greeting8"}
+                          data-plasmic-override={overrides.greeting8}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.greeting8
+                          )}
+                        >
+                          {
+                            "this new color house track is off of the Spectrum compilation from Antithesys Records!"
+                          }
+                        </div>
+                      </div>
+                    </p.PlasmicLink>
+                  </Tilt>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.freeBox__jTn8A)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qyVwN
+                    )}
+                  >
+                    {"past releases"}
+                  </div>
+
+                  <Tilt
+                    className={classNames("__wab_instance", sty.tilt___6O9HJ)}
+                    glareEnable={false}
+                    tiltMaxAngleX={10 as const}
+                    tiltMaxAngleY={10 as const}
+                    tiltReverse={true}
+                    trackOnWindow={false}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__qWbzG
+                      )}
+                      component={Link}
+                      href={
+                        "https://www.youtube.com/watch?v=dGwWZ-y0VbU" as const
+                      }
+                      platform={"nextjs"}
+                      target={"_blank" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__z94Gr
+                        )}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__yADdN)}
+                          displayHeight={"219px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"100%" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/disuko_website_v_2/images/logo2023Png.png",
+                            fullWidth: 2000,
+                            fullHeight: 2000,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__pjlHe
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"greeting9"}
+                          data-plasmic-override={overrides.greeting9}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.greeting9
+                          )}
+                        >
+                          {"under contruction"}
+                        </div>
+
+                        <div
+                          data-plasmic-name={"greeting10"}
+                          data-plasmic-override={overrides.greeting10}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.greeting10
+                          )}
+                        >
+                          <React.Fragment>
+                            <React.Fragment>
+                              {
+                                "soon you'll be able to find all my music on this page! for now, click the image to go to  my spotify page! (or check out my "
+                              }
+                            </React.Fragment>
+                            {
+                              <p.PlasmicLink
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.a,
+                                  projectcss.__wab_text,
+                                  projectcss.plasmic_default__inline,
+                                  sty.link___71RWc
+                                )}
+                                component={Link}
+                                href={"disuko.gay/links" as const}
+                                platform={"nextjs"}
+                              >
+                                {"links "}
+                              </p.PlasmicLink>
+                            }
+                            <React.Fragment>{"page)"}</React.Fragment>
+                          </React.Fragment>
+                        </div>
+                      </div>
+                    </p.PlasmicLink>
+                  </Tilt>
+                </div>
+              </div>
 
               <Footer
                 data-plasmic-name={"footer"}
@@ -209,15 +410,27 @@ const PlasmicDescendants = {
     "navbar",
     "main",
     "reveal",
-    "freeBox",
-    "musicSlides",
+    "greeting7",
+    "greeting8",
+    "greeting9",
+    "greeting10",
     "footer"
   ],
   navbar: ["navbar"],
-  main: ["main", "reveal", "freeBox", "musicSlides", "footer"],
-  reveal: ["reveal", "freeBox"],
-  freeBox: ["freeBox"],
-  musicSlides: ["musicSlides"],
+  main: [
+    "main",
+    "reveal",
+    "greeting7",
+    "greeting8",
+    "greeting9",
+    "greeting10",
+    "footer"
+  ],
+  reveal: ["reveal"],
+  greeting7: ["greeting7"],
+  greeting8: ["greeting8"],
+  greeting9: ["greeting9"],
+  greeting10: ["greeting10"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -228,8 +441,10 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   main: "div";
   reveal: typeof Reveal;
-  freeBox: "div";
-  musicSlides: typeof MusicSlides;
+  greeting7: "div";
+  greeting8: "div";
+  greeting9: "div";
+  greeting10: "div";
   footer: typeof Footer;
 };
 
@@ -297,8 +512,10 @@ export const PlasmicMusic = Object.assign(
     navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
     reveal: makeNodeComponent("reveal"),
-    freeBox: makeNodeComponent("freeBox"),
-    musicSlides: makeNodeComponent("musicSlides"),
+    greeting7: makeNodeComponent("greeting7"),
+    greeting8: makeNodeComponent("greeting8"),
+    greeting9: makeNodeComponent("greeting9"),
+    greeting10: makeNodeComponent("greeting10"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicMusic
