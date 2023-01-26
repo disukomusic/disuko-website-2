@@ -612,6 +612,7 @@
   font-size: 18px;
   align-self: flex-end;
   padding-bottom: 0px;
+  font-weight: 400;
   margin: 5px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1640,7 +1641,7 @@
   z-index: 1;
   font-size: 24px;
   align-self: center;
-  font-weight: 600;
+  font-weight: 400;
   min-width: 0;
   margin: 10px;
 }
