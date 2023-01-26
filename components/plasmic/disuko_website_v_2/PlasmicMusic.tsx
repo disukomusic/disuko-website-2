@@ -367,8 +367,7 @@ function PlasmicMusic__RenderFunc(props: {
                   <Reveal
                     cascade={true}
                     className={classNames("__wab_instance", sty.reveal___2NxCq)}
-                    direction={"right" as const}
-                    duration={1000 as const}
+                    duration={undefined}
                     effect={"bounce" as const}
                     reverse={false}
                     triggerOnce={true}
@@ -635,7 +634,7 @@ function PlasmicMusic__RenderFunc(props: {
                         )}
                         component={Link}
                         href={
-                          "https://open.spotify.com/track/6dIN7umYtVNvswPVqFuBob?si=c943df9fb6a44c8a" as const
+                          "https://open.spotify.com/track/2bExPBXaDjZwHyZDEyMfkJ?si=762783e460d84640" as const
                         }
                         platform={"nextjs"}
                         target={"_blank" as const}
