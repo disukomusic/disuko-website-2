@@ -230,7 +230,9 @@ function PlasmicLinks__RenderFunc(props: {
                   sty.link__fJgzI
                 )}
                 component={Link}
-                href={"https://youtu.be/NW1-c1bpfoI" as const}
+                href={
+                  "https://www.youtube.com/watch?v=4nzDNPGY_rg&t=23s" as const
+                }
                 platform={"nextjs"}
               >
                 <div
@@ -255,7 +257,7 @@ function PlasmicLinks__RenderFunc(props: {
                         sty.text__o9Dko
                       )}
                     >
-                      {"gameboy video essay!"}
+                      {"my top audio gear for 2023!"}
                     </div>
                   </div>
                 </div>
@@ -373,7 +375,7 @@ function PlasmicLinks__RenderFunc(props: {
                 )}
                 component={Link}
                 href={
-                  "https://open.spotify.com/album/0IYCr32ZZBaI4HOyVDjsQG?si=i_qD6uo-Q0qlVyUANubQUA" as const
+                  "https://open.spotify.com/track/1XbtwDSEB92yqCxXzxAGF3?si=33d77f6cbcaa474c" as const
                 }
                 platform={"nextjs"}
               >
@@ -395,7 +397,7 @@ function PlasmicLinks__RenderFunc(props: {
                         sty.text__sbX9V
                       )}
                     >
-                      {"out now: Interdimensional Ice Cream parlor"}
+                      {"out now: dino hop"}
                     </div>
                   </div>
                 </div>
