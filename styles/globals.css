@@ -39,6 +39,12 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+@font-face {
+  font-family: 'Keqima';
+  src: url('https://download1339.mediafire.com/ipvtjjol2nsg/c4d15sgaiaiv9f8/Keqima.woff2') format('woff2'), url('https://download1654.mediafire.com/9d15j0ham49g/l3bptk4ghca7p0w/Keqima.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 
 @media (prefers-color-scheme: dark) {
   :root {
