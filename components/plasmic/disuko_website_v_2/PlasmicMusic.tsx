@@ -39,6 +39,8 @@ import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R
 import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import Footer from "../../Footer"; // plasmic-import: phAOjgqEmd/component
 
+import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_disuko_website_v_2.module.css"; // plasmic-import: bsHvoheJaXyaeWhnCxRakT/projectcss
@@ -57,11 +59,42 @@ export type PlasmicMusic__OverridesType = {
   root?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
   main?: p.Flex<"div">;
-  reveal?: p.Flex<typeof Reveal>;
+  tilt?: p.Flex<typeof Tilt>;
   greeting7?: p.Flex<"div">;
   greeting8?: p.Flex<"div">;
+  underConstruction?: p.Flex<typeof Tilt>;
   greeting9?: p.Flex<"div">;
   greeting10?: p.Flex<"div">;
+  flotingOnCloudsRemix?: p.Flex<typeof Tilt>;
+  greeting11?: p.Flex<"div">;
+  greeting12?: p.Flex<"div">;
+  halloweenAve?: p.Flex<typeof Tilt>;
+  greeting13?: p.Flex<"div">;
+  greeting14?: p.Flex<"div">;
+  celestialBallad?: p.Flex<typeof Tilt>;
+  greeting15?: p.Flex<"div">;
+  greeting16?: p.Flex<"div">;
+  _9A56E8Tracer?: p.Flex<typeof Tilt>;
+  greeting19?: p.Flex<"div">;
+  greeting20?: p.Flex<"div">;
+  flutter?: p.Flex<typeof Tilt>;
+  greeting17?: p.Flex<"div">;
+  greeting18?: p.Flex<"div">;
+  fallenAngel?: p.Flex<typeof Tilt>;
+  greeting21?: p.Flex<"div">;
+  greeting22?: p.Flex<"div">;
+  raspberryFields?: p.Flex<typeof Tilt>;
+  greeting23?: p.Flex<"div">;
+  greeting24?: p.Flex<"div">;
+  iceCreamParlor?: p.Flex<typeof Tilt>;
+  greeting25?: p.Flex<"div">;
+  greeting26?: p.Flex<"div">;
+  nuclearChristmas?: p.Flex<typeof Tilt>;
+  greeting27?: p.Flex<"div">;
+  greeting28?: p.Flex<"div">;
+  bigShot?: p.Flex<typeof Tilt>;
+  greeting29?: p.Flex<"div">;
+  greeting30?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -95,6 +128,10 @@ function PlasmicMusic__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
 
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantswajuQ4R1DeAga()
+  });
 
   return (
     <React.Fragment>
@@ -175,10 +212,8 @@ function PlasmicMusic__RenderFunc(props: {
               className={classNames(projectcss.all, sty.main)}
             >
               <Reveal
-                data-plasmic-name={"reveal"}
-                data-plasmic-override={overrides.reveal}
                 cascade={true}
-                className={classNames("__wab_instance", sty.reveal)}
+                className={classNames("__wab_instance", sty.reveal__yKwZ)}
                 direction={"up" as const}
                 effect={"slide" as const}
                 triggerOnce={true}
@@ -221,7 +256,9 @@ function PlasmicMusic__RenderFunc(props: {
                   </div>
 
                   <Tilt
-                    className={classNames("__wab_instance", sty.tilt___6SVvz)}
+                    data-plasmic-name={"tilt"}
+                    data-plasmic-override={overrides.tilt}
+                    className={classNames("__wab_instance", sty.tilt)}
                     glareEnable={false}
                     tiltMaxAngleX={10 as const}
                     tiltMaxAngleY={10 as const}
@@ -241,30 +278,44 @@ function PlasmicMusic__RenderFunc(props: {
                       platform={"nextjs"}
                       target={"_blank" as const}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__govQ
-                        )}
-                      >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__im7MP)}
-                          displayHeight={"219px" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/disuko_website_v_2/images/untitled1Jpg.jpeg",
-                            fullWidth: 1920,
-                            fullHeight: 1080,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__govQ
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__im7MP)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("100%" as const)
+                                : ("240px" as const)
+                            }
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("none" as const)
+                                : ("100%" as const)
+                            }
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"100%" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/disuko_website_v_2/images/untitled1Jpg.jpeg",
+                              fullWidth: 1920,
+                              fullHeight: 1080,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        </div>
+                      ) : null}
 
                       <div
                         className={classNames(
@@ -313,107 +364,1197 @@ function PlasmicMusic__RenderFunc(props: {
                     {"past releases"}
                   </div>
 
-                  <Tilt
-                    className={classNames("__wab_instance", sty.tilt___6O9HJ)}
-                    glareEnable={false}
-                    tiltMaxAngleX={10 as const}
-                    tiltMaxAngleY={10 as const}
-                    tiltReverse={true}
-                    trackOnWindow={false}
+                  <Reveal
+                    cascade={true}
+                    className={classNames("__wab_instance", sty.reveal___2NxCq)}
+                    direction={"right" as const}
+                    duration={1000 as const}
+                    effect={"bounce" as const}
+                    reverse={false}
+                    triggerOnce={true}
                   >
-                    <p.PlasmicLink
+                    {true ? (
+                      <Tilt
+                        data-plasmic-name={"underConstruction"}
+                        data-plasmic-override={overrides.underConstruction}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.underConstruction
+                        )}
+                        glareEnable={false}
+                        tiltMaxAngleX={10 as const}
+                        tiltMaxAngleY={10 as const}
+                        tiltReverse={true}
+                        trackOnWindow={false}
+                      >
+                        <p.PlasmicLink
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.a,
+                            sty.link__qWbzG
+                          )}
+                          component={Link}
+                          href={
+                            "https://www.youtube.com/watch?v=dGwWZ-y0VbU" as const
+                          }
+                          platform={"nextjs"}
+                          target={"_blank" as const}
+                        >
+                          {(
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? true
+                              : true
+                          ) ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__z94Gr
+                              )}
+                            >
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img__yADdN)}
+                                displayHeight={
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? ("100%" as const)
+                                    : ("auto" as const)
+                                }
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"100%" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"100%" as const}
+                                loading={"lazy" as const}
+                                src={{
+                                  src: "/plasmic/disuko_website_v_2/images/logo2023Png.png",
+                                  fullWidth: 2000,
+                                  fullHeight: 2000,
+                                  aspectRatio: undefined
+                                }}
+                              />
+                            </div>
+                          ) : null}
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__pjlHe
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"greeting9"}
+                              data-plasmic-override={overrides.greeting9}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.greeting9
+                              )}
+                            >
+                              {hasVariant(
+                                globalVariants,
+                                "screen",
+                                "mobileOnly"
+                              )
+                                ? "under contruction"
+                                : "under contruction"}
+                            </div>
+
+                            <div
+                              data-plasmic-name={"greeting10"}
+                              data-plasmic-override={overrides.greeting10}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.greeting10
+                              )}
+                            >
+                              <React.Fragment>
+                                <React.Fragment>
+                                  {
+                                    "soon you'll be able to find all my music on this page! for now, click the image to go to  my spotify page! (or check out my "
+                                  }
+                                </React.Fragment>
+                                {
+                                  <p.PlasmicLink
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.a,
+                                      projectcss.__wab_text,
+                                      projectcss.plasmic_default__inline,
+                                      sty.link___71RWc
+                                    )}
+                                    component={Link}
+                                    href={"disuko.gay/links" as const}
+                                    platform={"nextjs"}
+                                  >
+                                    {"links "}
+                                  </p.PlasmicLink>
+                                }
+                                <React.Fragment>{"page)"}</React.Fragment>
+                              </React.Fragment>
+                            </div>
+                          </div>
+                        </p.PlasmicLink>
+                      </Tilt>
+                    ) : null}
+
+                    <Tilt
+                      data-plasmic-name={"flotingOnCloudsRemix"}
+                      data-plasmic-override={overrides.flotingOnCloudsRemix}
                       className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__qWbzG
+                        "__wab_instance",
+                        sty.flotingOnCloudsRemix
                       )}
-                      component={Link}
-                      href={
-                        "https://www.youtube.com/watch?v=dGwWZ-y0VbU" as const
-                      }
-                      platform={"nextjs"}
-                      target={"_blank" as const}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
                     >
-                      <div
+                      <p.PlasmicLink
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__z94Gr
+                          projectcss.a,
+                          sty.link__feFm
                         )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/6dIN7umYtVNvswPVqFuBob?si=c943df9fb6a44c8a" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
                       >
-                        <p.PlasmicImg
-                          alt={""}
-                          className={classNames(sty.img__yADdN)}
-                          displayHeight={"219px" as const}
-                          displayMaxHeight={"none" as const}
-                          displayMaxWidth={"100%" as const}
-                          displayMinHeight={"0" as const}
-                          displayMinWidth={"0" as const}
-                          displayWidth={"100%" as const}
-                          loading={"lazy" as const}
-                          src={{
-                            src: "/plasmic/disuko_website_v_2/images/logo2023Png.png",
-                            fullWidth: 2000,
-                            fullHeight: 2000,
-                            aspectRatio: undefined
-                          }}
-                        />
-                      </div>
-
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__pjlHe
-                        )}
-                      >
-                        <div
-                          data-plasmic-name={"greeting9"}
-                          data-plasmic-override={overrides.greeting9}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.greeting9
-                          )}
-                        >
-                          {"under contruction"}
-                        </div>
-
-                        <div
-                          data-plasmic-name={"greeting10"}
-                          data-plasmic-override={overrides.greeting10}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.greeting10
-                          )}
-                        >
-                          <React.Fragment>
-                            <React.Fragment>
-                              {
-                                "soon you'll be able to find all my music on this page! for now, click the image to go to  my spotify page! (or check out my "
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__dCitF
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__ixp2D)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("100%" as const)
+                                  : ("auto" as const)
                               }
-                            </React.Fragment>
-                            {
-                              <p.PlasmicLink
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.a,
-                                  projectcss.__wab_text,
-                                  projectcss.plasmic_default__inline,
-                                  sty.link___71RWc
-                                )}
-                                component={Link}
-                                href={"disuko.gay/links" as const}
-                                platform={"nextjs"}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/logo2023Png.png",
+                                fullWidth: 2000,
+                                fullHeight: 2000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___4CMkY
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting11"}
+                            data-plasmic-override={overrides.greeting11}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting11
+                            )}
+                          >
+                            {"Floating on Clouds (remix)"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting12"}
+                            data-plasmic-override={overrides.greeting12}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting12
+                            )}
+                          >
+                            <React.Fragment>
+                              <React.Fragment>
+                                {"this track is a remix of "}
+                              </React.Fragment>
+                              <span
+                                className={
+                                  "plasmic_default__all plasmic_default__span"
+                                }
+                                style={{ fontStyle: "italic" }}
                               >
-                                {"links "}
-                              </p.PlasmicLink>
-                            }
-                            <React.Fragment>{"page)"}</React.Fragment>
-                          </React.Fragment>
+                                {"floating on clouds"}
+                              </span>
+                              <React.Fragment>
+                                {
+                                  " that was  done by my friend Matthew William!"
+                                }
+                              </React.Fragment>
+                            </React.Fragment>
+                          </div>
                         </div>
-                      </div>
-                    </p.PlasmicLink>
-                  </Tilt>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"halloweenAve"}
+                      data-plasmic-override={overrides.halloweenAve}
+                      className={classNames("__wab_instance", sty.halloweenAve)}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__yCrCp
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/6dIN7umYtVNvswPVqFuBob?si=c943df9fb6a44c8a" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__k5NG
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__pUvcN)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/halloweenRavejpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__smP1X
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting13"}
+                            data-plasmic-override={overrides.greeting13}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting13
+                            )}
+                          >
+                            {"Disuko's Spooktacular Halloween Rave"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting14"}
+                            data-plasmic-override={overrides.greeting14}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting14
+                            )}
+                          >
+                            {
+                              "the full title is too long for my website-- this track is a collection of a few halloween vibes i produced!"
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"celestialBallad"}
+                      data-plasmic-override={overrides.celestialBallad}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.celestialBallad
+                      )}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__aJaX
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/7f5MD7Ij5QOjyMAtAGniHz?si=c4cc0fa79f654c46" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__dxIj
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__cz762)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("100%" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/celestialBalladjpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__xp1Ee
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting15"}
+                            data-plasmic-override={overrides.greeting15}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting15
+                            )}
+                          >
+                            {"CELESTIAL BALLAD"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting16"}
+                            data-plasmic-override={overrides.greeting16}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting16
+                            )}
+                          >
+                            <React.Fragment>
+                              <React.Fragment>
+                                {
+                                  "this track was made to celebrate getting 1000 subscribers on my "
+                                }
+                              </React.Fragment>
+                              {
+                                <p.PlasmicLink
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    projectcss.__wab_text,
+                                    projectcss.plasmic_default__inline,
+                                    sty.link__fiTl
+                                  )}
+                                  component={Link}
+                                  href={"youtube.com/disuko" as const}
+                                  platform={"nextjs"}
+                                >
+                                  {"youtube channel."}
+                                </p.PlasmicLink>
+                              }
+                              <React.Fragment>
+                                {
+                                  " i also played a live version in one of my sets!"
+                                }
+                              </React.Fragment>
+                            </React.Fragment>
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"_9A56E8Tracer"}
+                      data-plasmic-override={overrides._9A56E8Tracer}
+                      className={classNames(
+                        "__wab_instance",
+                        sty._9A56E8Tracer
+                      )}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__n72K8
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/0s4iekDOxufDqkDmzDBpjS?si=86f4eceeb945437c" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__iddJi
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__zJdPk)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/purpleTracerRemixpng.png",
+                                fullWidth: 1984,
+                                fullHeight: 1984,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__q7EBz
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting19"}
+                            data-plasmic-override={overrides.greeting19}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting19
+                            )}
+                          >
+                            {"#9a56e8 (Trac3r Remix)"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting20"}
+                            data-plasmic-override={overrides.greeting20}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting20
+                            )}
+                          >
+                            {
+                              "this  is a remix of a song from my album Interdimensional Ice Cream Parlor! he brought a darker feel to my  emotional piano colorbass song."
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"flutter"}
+                      data-plasmic-override={overrides.flutter}
+                      className={classNames("__wab_instance", sty.flutter)}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__mOgN
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/3dzUSWYs6Fk1mDh734kKRW?si=81eb7fd315244251" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___1NIaD
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___2YoW)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("100%" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/flutterjpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__edM7R
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting17"}
+                            data-plasmic-override={overrides.greeting17}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting17
+                            )}
+                          >
+                            {"flutter"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting18"}
+                            data-plasmic-override={overrides.greeting18}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting18
+                            )}
+                          >
+                            {
+                              '"flutter" was somewhat my first venture into colorbass and experimenting with how i could make it fit my style!'
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"fallenAngel"}
+                      data-plasmic-override={overrides.fallenAngel}
+                      className={classNames("__wab_instance", sty.fallenAngel)}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__luP8A
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/2CbGj6qNGFTqgP7sPFDdWB?si=0a178e8637ce4b03" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__sCpVz
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___2RekE)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/fallenAngeljpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___2Mygh
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting21"}
+                            data-plasmic-override={overrides.greeting21}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting21
+                            )}
+                          >
+                            {"Fallen Angel (Disuko's Divine Remix)"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting22"}
+                            data-plasmic-override={overrides.greeting22}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting22
+                            )}
+                          >
+                            {
+                              "this track is a remix of a song by Tanger! he's a super cool guy and is even on the beat saber OST!"
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"raspberryFields"}
+                      data-plasmic-override={overrides.raspberryFields}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.raspberryFields
+                      )}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__rbUeV
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/40LHymdYJD3FfvFcofIGTF?si=c9254295fc704598" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__f3Tgd
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__yjEkp)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/raspberryFieldsjpg2.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ekNc2
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting23"}
+                            data-plasmic-override={overrides.greeting23}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting23
+                            )}
+                          >
+                            {"Raspberry Fields"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting24"}
+                            data-plasmic-override={overrides.greeting24}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting24
+                            )}
+                          >
+                            {
+                              "raspberry fields starts off as a chiptune song, a style of music that i've grown to love recently. fun fact: it also samples from Maya Clancy's floating on clouds vocal!"
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"iceCreamParlor"}
+                      data-plasmic-override={overrides.iceCreamParlor}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.iceCreamParlor
+                      )}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__rccRr
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/album/0IYCr32ZZBaI4HOyVDjsQG?si=X82WqBvOT-SM0ujDcFz9eQ" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__ju6I7
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__bB47F)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/iceCreamParlorjpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__xL5Ys
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting25"}
+                            data-plasmic-override={overrides.greeting25}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting25
+                            )}
+                          >
+                            {"Interdimensional Ice Cream Parlor"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting26"}
+                            data-plasmic-override={overrides.greeting26}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting26
+                            )}
+                          >
+                            {
+                              "this release was my first full length album! it explores rhythm game music and a large variety of edm genres. it also had CDs!"
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"nuclearChristmas"}
+                      data-plasmic-override={overrides.nuclearChristmas}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.nuclearChristmas
+                      )}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link___8KMci
+                        )}
+                        component={Link}
+                        href={
+                          "https://open.spotify.com/track/1yh1AgoTeRecU1q7aj6pY4?si=3eeaa14340a74c5e" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__xakKz
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__dVgKh)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/nuclearChristmasjpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ml4Ka
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting27"}
+                            data-plasmic-override={overrides.greeting27}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting27
+                            )}
+                          >
+                            {"Nuclear Christmas"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting28"}
+                            data-plasmic-override={overrides.greeting28}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting28
+                            )}
+                          >
+                            <React.Fragment>
+                              <React.Fragment>
+                                {"this song was a collaboration with "}
+                              </React.Fragment>
+                              {
+                                <p.PlasmicLink
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    projectcss.__wab_text,
+                                    projectcss.plasmic_default__inline,
+                                    sty.link__jvTyp
+                                  )}
+                                  component={Link}
+                                  href={
+                                    "https://twitter.com/blkcrstlstudios" as const
+                                  }
+                                  platform={"nextjs"}
+                                >
+                                  {"Black Crystal Studios"}
+                                </p.PlasmicLink>
+                              }
+                              <React.Fragment>
+                                {
+                                  ". they make comics about a cat-man named Terriful!"
+                                }
+                              </React.Fragment>
+                            </React.Fragment>
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+
+                    <Tilt
+                      data-plasmic-name={"bigShot"}
+                      data-plasmic-override={overrides.bigShot}
+                      className={classNames("__wab_instance", sty.bigShot)}
+                      glareEnable={false}
+                      tiltMaxAngleX={10 as const}
+                      tiltMaxAngleY={10 as const}
+                      tiltReverse={true}
+                      trackOnWindow={false}
+                    >
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__fm5Y9
+                        )}
+                        component={Link}
+                        href={
+                          "https://www.youtube.com/watch?v=RjSIMB61uBU" as const
+                        }
+                        platform={"nextjs"}
+                        target={"_blank" as const}
+                      >
+                        {(
+                          hasVariant(globalVariants, "screen", "mobileOnly")
+                            ? true
+                            : true
+                        ) ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__qsrdc
+                            )}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img___4SvHm)}
+                              displayHeight={
+                                hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? ("auto" as const)
+                                  : ("auto" as const)
+                              }
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"100%" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/disuko_website_v_2/images/bigShotjpg.jpeg",
+                                fullWidth: 3000,
+                                fullHeight: 3000,
+                                aspectRatio: undefined
+                              }}
+                            />
+                          </div>
+                        ) : null}
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__lGChf
+                          )}
+                        >
+                          <div
+                            data-plasmic-name={"greeting29"}
+                            data-plasmic-override={overrides.greeting29}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting29
+                            )}
+                          >
+                            {"BIG SHOT (Disuko's [HYP3RL1NK BL0CK3D] Remix)"}
+                          </div>
+
+                          <div
+                            data-plasmic-name={"greeting30"}
+                            data-plasmic-override={overrides.greeting30}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.greeting30
+                            )}
+                          >
+                            {
+                              "this track is a remix of Spamton G. Spamton's theme from Toby Fox's DELTARUNE."
+                            }
+                          </div>
+                        </div>
+                      </p.PlasmicLink>
+                    </Tilt>
+                  </Reveal>
                 </div>
               </div>
 
@@ -435,28 +1576,121 @@ const PlasmicDescendants = {
     "root",
     "navbar",
     "main",
-    "reveal",
+    "tilt",
     "greeting7",
     "greeting8",
+    "underConstruction",
     "greeting9",
     "greeting10",
+    "flotingOnCloudsRemix",
+    "greeting11",
+    "greeting12",
+    "halloweenAve",
+    "greeting13",
+    "greeting14",
+    "celestialBallad",
+    "greeting15",
+    "greeting16",
+    "_9A56E8Tracer",
+    "greeting19",
+    "greeting20",
+    "flutter",
+    "greeting17",
+    "greeting18",
+    "fallenAngel",
+    "greeting21",
+    "greeting22",
+    "raspberryFields",
+    "greeting23",
+    "greeting24",
+    "iceCreamParlor",
+    "greeting25",
+    "greeting26",
+    "nuclearChristmas",
+    "greeting27",
+    "greeting28",
+    "bigShot",
+    "greeting29",
+    "greeting30",
     "footer"
   ],
   navbar: ["navbar"],
   main: [
     "main",
-    "reveal",
+    "tilt",
     "greeting7",
     "greeting8",
+    "underConstruction",
     "greeting9",
     "greeting10",
+    "flotingOnCloudsRemix",
+    "greeting11",
+    "greeting12",
+    "halloweenAve",
+    "greeting13",
+    "greeting14",
+    "celestialBallad",
+    "greeting15",
+    "greeting16",
+    "_9A56E8Tracer",
+    "greeting19",
+    "greeting20",
+    "flutter",
+    "greeting17",
+    "greeting18",
+    "fallenAngel",
+    "greeting21",
+    "greeting22",
+    "raspberryFields",
+    "greeting23",
+    "greeting24",
+    "iceCreamParlor",
+    "greeting25",
+    "greeting26",
+    "nuclearChristmas",
+    "greeting27",
+    "greeting28",
+    "bigShot",
+    "greeting29",
+    "greeting30",
     "footer"
   ],
-  reveal: ["reveal"],
+  tilt: ["tilt", "greeting7", "greeting8"],
   greeting7: ["greeting7"],
   greeting8: ["greeting8"],
+  underConstruction: ["underConstruction", "greeting9", "greeting10"],
   greeting9: ["greeting9"],
   greeting10: ["greeting10"],
+  flotingOnCloudsRemix: ["flotingOnCloudsRemix", "greeting11", "greeting12"],
+  greeting11: ["greeting11"],
+  greeting12: ["greeting12"],
+  halloweenAve: ["halloweenAve", "greeting13", "greeting14"],
+  greeting13: ["greeting13"],
+  greeting14: ["greeting14"],
+  celestialBallad: ["celestialBallad", "greeting15", "greeting16"],
+  greeting15: ["greeting15"],
+  greeting16: ["greeting16"],
+  _9A56E8Tracer: ["_9A56E8Tracer", "greeting19", "greeting20"],
+  greeting19: ["greeting19"],
+  greeting20: ["greeting20"],
+  flutter: ["flutter", "greeting17", "greeting18"],
+  greeting17: ["greeting17"],
+  greeting18: ["greeting18"],
+  fallenAngel: ["fallenAngel", "greeting21", "greeting22"],
+  greeting21: ["greeting21"],
+  greeting22: ["greeting22"],
+  raspberryFields: ["raspberryFields", "greeting23", "greeting24"],
+  greeting23: ["greeting23"],
+  greeting24: ["greeting24"],
+  iceCreamParlor: ["iceCreamParlor", "greeting25", "greeting26"],
+  greeting25: ["greeting25"],
+  greeting26: ["greeting26"],
+  nuclearChristmas: ["nuclearChristmas", "greeting27", "greeting28"],
+  greeting27: ["greeting27"],
+  greeting28: ["greeting28"],
+  bigShot: ["bigShot", "greeting29", "greeting30"],
+  greeting29: ["greeting29"],
+  greeting30: ["greeting30"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -466,11 +1700,42 @@ type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
   main: "div";
-  reveal: typeof Reveal;
+  tilt: typeof Tilt;
   greeting7: "div";
   greeting8: "div";
+  underConstruction: typeof Tilt;
   greeting9: "div";
   greeting10: "div";
+  flotingOnCloudsRemix: typeof Tilt;
+  greeting11: "div";
+  greeting12: "div";
+  halloweenAve: typeof Tilt;
+  greeting13: "div";
+  greeting14: "div";
+  celestialBallad: typeof Tilt;
+  greeting15: "div";
+  greeting16: "div";
+  _9A56E8Tracer: typeof Tilt;
+  greeting19: "div";
+  greeting20: "div";
+  flutter: typeof Tilt;
+  greeting17: "div";
+  greeting18: "div";
+  fallenAngel: typeof Tilt;
+  greeting21: "div";
+  greeting22: "div";
+  raspberryFields: typeof Tilt;
+  greeting23: "div";
+  greeting24: "div";
+  iceCreamParlor: typeof Tilt;
+  greeting25: "div";
+  greeting26: "div";
+  nuclearChristmas: typeof Tilt;
+  greeting27: "div";
+  greeting28: "div";
+  bigShot: typeof Tilt;
+  greeting29: "div";
+  greeting30: "div";
   footer: typeof Footer;
 };
 
@@ -537,11 +1802,42 @@ export const PlasmicMusic = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
-    reveal: makeNodeComponent("reveal"),
+    tilt: makeNodeComponent("tilt"),
     greeting7: makeNodeComponent("greeting7"),
     greeting8: makeNodeComponent("greeting8"),
+    underConstruction: makeNodeComponent("underConstruction"),
     greeting9: makeNodeComponent("greeting9"),
     greeting10: makeNodeComponent("greeting10"),
+    flotingOnCloudsRemix: makeNodeComponent("flotingOnCloudsRemix"),
+    greeting11: makeNodeComponent("greeting11"),
+    greeting12: makeNodeComponent("greeting12"),
+    halloweenAve: makeNodeComponent("halloweenAve"),
+    greeting13: makeNodeComponent("greeting13"),
+    greeting14: makeNodeComponent("greeting14"),
+    celestialBallad: makeNodeComponent("celestialBallad"),
+    greeting15: makeNodeComponent("greeting15"),
+    greeting16: makeNodeComponent("greeting16"),
+    _9A56E8Tracer: makeNodeComponent("_9A56E8Tracer"),
+    greeting19: makeNodeComponent("greeting19"),
+    greeting20: makeNodeComponent("greeting20"),
+    flutter: makeNodeComponent("flutter"),
+    greeting17: makeNodeComponent("greeting17"),
+    greeting18: makeNodeComponent("greeting18"),
+    fallenAngel: makeNodeComponent("fallenAngel"),
+    greeting21: makeNodeComponent("greeting21"),
+    greeting22: makeNodeComponent("greeting22"),
+    raspberryFields: makeNodeComponent("raspberryFields"),
+    greeting23: makeNodeComponent("greeting23"),
+    greeting24: makeNodeComponent("greeting24"),
+    iceCreamParlor: makeNodeComponent("iceCreamParlor"),
+    greeting25: makeNodeComponent("greeting25"),
+    greeting26: makeNodeComponent("greeting26"),
+    nuclearChristmas: makeNodeComponent("nuclearChristmas"),
+    greeting27: makeNodeComponent("greeting27"),
+    greeting28: makeNodeComponent("greeting28"),
+    bigShot: makeNodeComponent("bigShot"),
+    greeting29: makeNodeComponent("greeting29"),
+    greeting30: makeNodeComponent("greeting30"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicMusic
