@@ -794,6 +794,11 @@
           "id": "FSD7UoQDp",
           "name": "Logo 2023.png",
           "filePath": "../public/plasmic/disuko_website_v_2/images/logo2023Png.png"
+        },
+        {
+          "id": "QlIUsgany",
+          "name": "Logo 2023 Eyes Closed Transparent.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/logo2023EyesClosedTransparentpng.png"
         }
       ],
       "indirect": false,

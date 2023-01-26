@@ -174,9 +174,9 @@ function PlasmicLinks__RenderFunc(props: {
               displayWidth={"auto" as const}
               loading={"lazy" as const}
               src={{
-                src: "/plasmic/disuko_website_v_2/images/avatarsMy1B7Tt58RV9RrB51P287GT240X240Jpg.jpeg",
-                fullWidth: 240,
-                fullHeight: 240,
+                src: "/plasmic/disuko_website_v_2/images/logo2023Png.png",
+                fullWidth: 2000,
+                fullHeight: 2000,
                 aspectRatio: undefined
               }}
             />
