@@ -428,7 +428,6 @@
   align-self: center;
   left: auto;
   top: auto;
-  display: flex;
   margin-top: calc(10px + 10px) !important;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -439,6 +438,7 @@
   z-index: 1;
   width: 100%;
   min-width: 0;
+  display: none;
 }
 .link__tU0WY {
   display: grid;

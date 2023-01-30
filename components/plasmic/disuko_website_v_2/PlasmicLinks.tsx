@@ -256,9 +256,7 @@ function PlasmicLinks__RenderFunc(props: {
                   sty.link__fJgzI
                 )}
                 component={Link}
-                href={
-                  "https://www.youtube.com/watch?v=4nzDNPGY_rg&t=23s" as const
-                }
+                href={"https://youtu.be/l6Bh6fn8x5c" as const}
                 platform={"nextjs"}
               >
                 <div
@@ -283,7 +281,7 @@ function PlasmicLinks__RenderFunc(props: {
                         sty.text__o9Dko
                       )}
                     >
-                      {"my top audio gear for 2023!"}
+                      {"silent disco live set"}
                     </div>
                   </div>
                 </div>
@@ -338,51 +336,55 @@ function PlasmicLinks__RenderFunc(props: {
               </p.PlasmicLink>
             </Tilt>
 
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__wfpGx)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10 as const}
-              tiltMaxAngleY={10 as const}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__tU0WY
-                )}
-                component={Link}
-                href={"https://www.fiverr.com/share/8mN3dp" as const}
-                platform={"nextjs"}
+            {true ? (
+              <Tilt
+                className={classNames("__wab_instance", sty.tilt__wfpGx)}
+                glareEnable={false}
+                gyroscope={true}
+                tiltMaxAngleX={10 as const}
+                tiltMaxAngleY={10 as const}
+                tiltReverse={true}
+                trackOnWindow={false}
               >
-                <div className={classNames(projectcss.all, sty.columns__d5SzW)}>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__tU0WY
+                  )}
+                  component={Link}
+                  href={"https://www.fiverr.com/share/8mN3dp" as const}
+                  platform={"nextjs"}
+                >
                   <div
-                    className={classNames(projectcss.all, sty.column__tkywi)}
-                  >
-                    <PigMoneysvgIcon
-                      className={classNames(projectcss.all, sty.svg__edt3E)}
-                      role={"img"}
-                    />
-                  </div>
-
-                  <div
-                    className={classNames(projectcss.all, sty.column__jgOhS)}
+                    className={classNames(projectcss.all, sty.columns__d5SzW)}
                   >
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__tnfkE
-                      )}
+                      className={classNames(projectcss.all, sty.column__tkywi)}
                     >
-                      {"commissions open!"}
+                      <PigMoneysvgIcon
+                        className={classNames(projectcss.all, sty.svg__edt3E)}
+                        role={"img"}
+                      />
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.column__jgOhS)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tnfkE
+                        )}
+                      >
+                        {"commissions open!"}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </p.PlasmicLink>
-            </Tilt>
+                </p.PlasmicLink>
+              </Tilt>
+            ) : null}
 
             <Tilt
               className={classNames("__wab_instance", sty.tilt__i7Qya)}
