@@ -309,9 +309,9 @@ function PlasmicMusic__RenderFunc(props: {
                             displayWidth={"100%" as const}
                             loading={"lazy" as const}
                             src={{
-                              src: "/plasmic/disuko_website_v_2/images/withYouAlbumArtpng.png",
-                              fullWidth: 4500,
-                              fullHeight: 4500,
+                              src: "/plasmic/disuko_website_v_2/images/image20230213211301198Png.png",
+                              fullWidth: 800,
+                              fullHeight: 800,
                               aspectRatio: undefined
                             }}
                           />
