@@ -162,6 +162,8 @@ function PlasmicButton2__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
 
@@ -173,9 +175,7 @@ function PlasmicButton2__RenderFunc(props: {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showStartIcon
-          : undefined,
-
-        variableType: "variant"
+          : undefined
       },
       {
         path: "showEndIcon",
@@ -183,43 +183,31 @@ function PlasmicButton2__RenderFunc(props: {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showEndIcon
-          : undefined,
-
-        variableType: "variant"
+          : undefined
       },
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.isDisabled
-          : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
       {
         path: "shape",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.shape : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.shape : undefined
       },
       {
         path: "size",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.size : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.size : undefined
       },
       {
         path: "color",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       }
     ],
     [$props, $ctx]

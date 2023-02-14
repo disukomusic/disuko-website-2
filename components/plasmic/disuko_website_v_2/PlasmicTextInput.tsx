@@ -136,6 +136,8 @@ function PlasmicTextInput__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
 
@@ -147,9 +149,7 @@ function PlasmicTextInput__RenderFunc(props: {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showStartIcon
-          : undefined,
-
-        variableType: "variant"
+          : undefined
       },
       {
         path: "showEndIcon",
@@ -157,27 +157,19 @@ function PlasmicTextInput__RenderFunc(props: {
         variableType: "variant",
         initFunc: true
           ? ($props, $state, $ctx) => $props.showEndIcon
-          : undefined,
-
-        variableType: "variant"
+          : undefined
       },
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true
-          ? ($props, $state, $ctx) => $props.isDisabled
-          : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
       {
         path: "color",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined,
-
-        variableType: "variant"
+        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       }
     ],
     [$props, $ctx]
@@ -289,6 +281,9 @@ function PlasmicTextInput__RenderFunc(props: {
         }
         name={args.name}
         placeholder={args.placeholder}
+        ref={ref => {
+          $refs["input"] = ref;
+        }}
         required={args.required}
         type={"text" as const}
         value={args.value}

@@ -59,7 +59,8 @@ export type PlasmicMusic__OverridesType = {
   root?: p.Flex<"div">;
   navbar?: p.Flex<typeof Navbar>;
   main?: p.Flex<"div">;
-  tilt?: p.Flex<typeof Tilt>;
+  greeting31?: p.Flex<"div">;
+  greeting32?: p.Flex<"div">;
   greeting7?: p.Flex<"div">;
   greeting8?: p.Flex<"div">;
   underConstruction?: p.Flex<typeof Tilt>;
@@ -124,6 +125,8 @@ function PlasmicMusic__RenderFunc(props: {
     ...args,
     ...variants
   };
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
 
@@ -256,9 +259,114 @@ function PlasmicMusic__RenderFunc(props: {
                   </div>
 
                   <Tilt
-                    data-plasmic-name={"tilt"}
-                    data-plasmic-override={overrides.tilt}
-                    className={classNames("__wab_instance", sty.tilt)}
+                    className={classNames("__wab_instance", sty.tilt__ruF32)}
+                    glareEnable={false}
+                    tiltMaxAngleX={10 as const}
+                    tiltMaxAngleY={10 as const}
+                    tiltReverse={true}
+                    trackOnWindow={false}
+                  >
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__y6ZHg
+                      )}
+                      component={Link}
+                      href={
+                        "https://distrokid.com/hyperfollow/disuko/with-you" as const
+                      }
+                      platform={"nextjs"}
+                      target={"_blank" as const}
+                    >
+                      {(
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? true
+                          : true
+                      ) ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___90CY
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__gMnZk)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("100%" as const)
+                                : ("240px" as const)
+                            }
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? ("none" as const)
+                                : ("100%" as const)
+                            }
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"100%" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/disuko_website_v_2/images/withYouAlbumArtpng.png",
+                              fullWidth: 4500,
+                              fullHeight: 4500,
+                              aspectRatio: undefined
+                            }}
+                          />
+                        </div>
+                      ) : null}
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__goQk1
+                        )}
+                      >
+                        <div
+                          data-plasmic-name={"greeting31"}
+                          data-plasmic-override={overrides.greeting31}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.greeting31
+                          )}
+                        >
+                          {"with you"}
+                        </div>
+
+                        <div
+                          data-plasmic-name={"greeting32"}
+                          data-plasmic-override={overrides.greeting32}
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.greeting32
+                          )}
+                        >
+                          {
+                            "some classic kawaii future bass with a vocal by Mlyk! created to celebrate valentines day <3"
+                          }
+                        </div>
+                      </div>
+                    </p.PlasmicLink>
+                  </Tilt>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.freeBox__jTn8A)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__qyVwN
+                    )}
+                  >
+                    {"past releases"}
+                  </div>
+
+                  <Tilt
+                    className={classNames("__wab_instance", sty.tilt___6SVvz)}
                     glareEnable={false}
                     tiltMaxAngleX={10 as const}
                     tiltMaxAngleY={10 as const}
@@ -351,18 +459,6 @@ function PlasmicMusic__RenderFunc(props: {
                       </div>
                     </p.PlasmicLink>
                   </Tilt>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.freeBox__jTn8A)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__qyVwN
-                    )}
-                  >
-                    {"past releases"}
-                  </div>
 
                   <Reveal
                     cascade={true}
@@ -1575,7 +1671,8 @@ const PlasmicDescendants = {
     "root",
     "navbar",
     "main",
-    "tilt",
+    "greeting31",
+    "greeting32",
     "greeting7",
     "greeting8",
     "underConstruction",
@@ -1616,7 +1713,8 @@ const PlasmicDescendants = {
   navbar: ["navbar"],
   main: [
     "main",
-    "tilt",
+    "greeting31",
+    "greeting32",
     "greeting7",
     "greeting8",
     "underConstruction",
@@ -1654,7 +1752,8 @@ const PlasmicDescendants = {
     "greeting30",
     "footer"
   ],
-  tilt: ["tilt", "greeting7", "greeting8"],
+  greeting31: ["greeting31"],
+  greeting32: ["greeting32"],
   greeting7: ["greeting7"],
   greeting8: ["greeting8"],
   underConstruction: ["underConstruction", "greeting9", "greeting10"],
@@ -1699,7 +1798,8 @@ type NodeDefaultElementType = {
   root: "div";
   navbar: typeof Navbar;
   main: "div";
-  tilt: typeof Tilt;
+  greeting31: "div";
+  greeting32: "div";
   greeting7: "div";
   greeting8: "div";
   underConstruction: typeof Tilt;
@@ -1801,7 +1901,8 @@ export const PlasmicMusic = Object.assign(
     // Helper components rendering sub-elements
     navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
-    tilt: makeNodeComponent("tilt"),
+    greeting31: makeNodeComponent("greeting31"),
+    greeting32: makeNodeComponent("greeting32"),
     greeting7: makeNodeComponent("greeting7"),
     greeting8: makeNodeComponent("greeting8"),
     underConstruction: makeNodeComponent("underConstruction"),
