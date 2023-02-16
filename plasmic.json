@@ -568,7 +568,7 @@
           "projectId": "bsHvoheJaXyaeWhnCxRakT",
           "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSugarrushthree.tsx",
           "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
+            "modulePath": "../pages/SUGARRUSHTHREE.tsx"
           },
           "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSugarrushthree.module.css",
           "scheme": "blackbox",
