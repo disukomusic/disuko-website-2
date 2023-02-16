@@ -560,6 +560,19 @@
           "cssFilePath": "plasmic/disuko_website_v_2/PlasmicLinks.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "JYPULZb0pa",
+          "name": "Sugarrushthree",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSugarrushthree.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSugarrushthree.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -854,6 +867,11 @@
           "id": "YQMFEsvHd",
           "name": "image_2023-02-13_211301198.png",
           "filePath": "../public/plasmic/disuko_website_v_2/images/image20230213211301198Png.png"
+        },
+        {
+          "id": "-Ojb-HyWp",
+          "name": "Sugar Rush Three teaser.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/sugarRushThreeTeaserpng.png"
         }
       ],
       "indirect": false,
