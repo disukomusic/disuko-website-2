@@ -47,7 +47,6 @@ import projectcss from "./plasmic_disuko_website_v_2.module.css"; // plasmic-imp
 import sty from "./PlasmicLinks.module.css"; // plasmic-import: 2QM518ijxs/css
 
 import BrandYoutubesvgIcon from "./icons/PlasmicIcon__BrandYoutubesvg"; // plasmic-import: 8iuJ_X12Ok/icon
-import HeadphonessvgIcon from "./icons/PlasmicIcon__Headphonessvg"; // plasmic-import: yb2-zw2oZD/icon
 import PigMoneysvgIcon from "./icons/PlasmicIcon__PigMoneysvg"; // plasmic-import: HQAqXLuGsk/icon
 import BrandSpotifysvgIcon from "./icons/PlasmicIcon__BrandSpotifysvg"; // plasmic-import: 15ld03NlrL/icon
 import BrandApplesvgIcon from "./icons/PlasmicIcon__BrandApplesvg"; // plasmic-import: VijP-mvKcQ/icon
@@ -243,6 +242,54 @@ function PlasmicLinks__RenderFunc(props: {
             ) : null}
 
             <Tilt
+              className={classNames("__wab_instance", sty.tilt__z0Qvg)}
+              glareEnable={false}
+              gyroscope={true}
+              tiltMaxAngleX={10 as const}
+              tiltMaxAngleY={10 as const}
+              tiltReverse={true}
+              trackOnWindow={false}
+            >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__fJgzI
+                )}
+                component={Link}
+                href={"https://www.youtube.com/watch?v=Q8zsozadw8g" as const}
+                platform={"nextjs"}
+              >
+                <div
+                  className={classNames(projectcss.all, sty.columns___1IRvS)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__gNurq)}
+                  >
+                    <BrandYoutubesvgIcon
+                      className={classNames(projectcss.all, sty.svg__unk8Q)}
+                      role={"img"}
+                    />
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column__wxPcz)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__o9Dko
+                      )}
+                    >
+                      {"camellia Ashed Wings Reaction"}
+                    </div>
+                  </div>
+                </div>
+              </p.PlasmicLink>
+            </Tilt>
+
+            <Tilt
               className={classNames("__wab_instance", sty.tilt__i7Qya)}
               glareEnable={false}
               gyroscope={true}
@@ -280,102 +327,6 @@ function PlasmicLinks__RenderFunc(props: {
                       )}
                     >
                       {"stream: with you music video"}
-                    </div>
-                  </div>
-                </div>
-              </p.PlasmicLink>
-            </Tilt>
-
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__nzfAp)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10 as const}
-              tiltMaxAngleY={10 as const}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__sZpRq
-                )}
-                component={Link}
-                href={
-                  "https://distrokid.com/hyperfollow/disuko/with-you" as const
-                }
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__rWOwQ)}>
-                  <div
-                    className={classNames(projectcss.all, sty.column__xsHhM)}
-                  >
-                    <HeadphonessvgIcon
-                      className={classNames(projectcss.all, sty.svg___7IUj)}
-                      role={"img"}
-                    />
-                  </div>
-
-                  <div
-                    className={classNames(projectcss.all, sty.column__uvQk8)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___5V0F
-                      )}
-                    >
-                      {"presave: with you"}
-                    </div>
-                  </div>
-                </div>
-              </p.PlasmicLink>
-            </Tilt>
-
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__z0Qvg)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10 as const}
-              tiltMaxAngleY={10 as const}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__fJgzI
-                )}
-                component={Link}
-                href={"https://youtu.be/l6Bh6fn8x5c" as const}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.columns___1IRvS)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.column__gNurq)}
-                  >
-                    <BrandYoutubesvgIcon
-                      className={classNames(projectcss.all, sty.svg__unk8Q)}
-                      role={"img"}
-                    />
-                  </div>
-
-                  <div
-                    className={classNames(projectcss.all, sty.column__wxPcz)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__o9Dko
-                      )}
-                    >
-                      {"silent disco live set"}
                     </div>
                   </div>
                 </div>
