@@ -38,8 +38,7 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -58,8 +57,7 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -78,8 +76,7 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -113,8 +110,7 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "wJAowqBqcWtGU49FNparet",
@@ -382,8 +378,7 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "itBdcjth19Wasd6ngAYxWR",
@@ -412,8 +407,7 @@
           "name": "FollowWrapper",
           "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -432,8 +426,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "bsHvoheJaXyaeWhnCxRakT",
@@ -571,6 +564,19 @@
             "modulePath": "../pages/SUGARRUSHTHREE.tsx"
           },
           "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSugarrushthree.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "c8IRUFkDBuD",
+          "name": "Portfolio",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicPortfolio.tsx",
+          "importSpec": {
+            "modulePath": "../pages/portfolio.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicPortfolio.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -872,6 +878,166 @@
           "id": "-Ojb-HyWp",
           "name": "Sugar Rush Three teaser.png",
           "filePath": "../public/plasmic/disuko_website_v_2/images/sugarRushThreeTeaserpng.png"
+        },
+        {
+          "id": "Gyb49OU4Z",
+          "name": "Headshot ting.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/headshotTingpng.png"
+        },
+        {
+          "id": "1tVLkqZul",
+          "name": "angeloDJing.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/angeloDJingjpg.jpeg"
+        },
+        {
+          "id": "UN9Ua-7ZA",
+          "name": "cat jazz.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/catJazzjpg.jpeg"
+        },
+        {
+          "id": "Vy6aAWS7h",
+          "name": "0001.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/_0001Png.png"
+        },
+        {
+          "id": "zcoPbS0Zq",
+          "name": "GBCBulb0001.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/gbcBulb0001Png.png"
+        },
+        {
+          "id": "REr56Q93L",
+          "name": "hexworld0001.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/hexworld0001Jpg.jpeg"
+        },
+        {
+          "id": "arEieMl-Q",
+          "name": "image 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image2.png"
+        },
+        {
+          "id": "0FZzn6Rm9",
+          "name": "image 3",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image3.png"
+        },
+        {
+          "id": "JmBY9Az8J",
+          "name": "image 4",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image4.png"
+        },
+        {
+          "id": "ocuErkjRG",
+          "name": "image 5",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image5.png"
+        },
+        {
+          "id": "Z7KJB6vg0",
+          "name": "image 6",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image6.png"
+        },
+        {
+          "id": "tpQEqnwUW",
+          "name": "image 7",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image7.png"
+        },
+        {
+          "id": "OopgKj7jg",
+          "name": "image 8",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image8.png"
+        },
+        {
+          "id": "MuclC86-F",
+          "name": "image 9",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image9.png"
+        },
+        {
+          "id": "8Wx8GldM8",
+          "name": "fiiverr.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/fiiverrjpg.jpeg"
+        },
+        {
+          "id": "iYwUKsEPb",
+          "name": "image 10",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image10.png"
+        },
+        {
+          "id": "0cc8IIYKI",
+          "name": "image 11",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image11.jpeg"
+        },
+        {
+          "id": "U6cXSvDvT",
+          "name": "image 12",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image12.png"
+        },
+        {
+          "id": "4foVEX5yW",
+          "name": "image 13",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image13.png"
+        },
+        {
+          "id": "Jb-bChzUa",
+          "name": "image 14",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image14.png"
+        },
+        {
+          "id": "aKHYe_O6T",
+          "name": "IMM logo .png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/immLogoPng.png"
+        },
+        {
+          "id": "npFcaco8S",
+          "name": "GGJ Icon.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/ggjIconpng.png"
+        },
+        {
+          "id": "ibyXnrIU6",
+          "name": "DDSLogo.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/ddsLogopng.png"
+        },
+        {
+          "id": "HPoltwOjr",
+          "name": "image 15",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image15.png"
+        },
+        {
+          "id": "G62fZG1Ci",
+          "name": "RPS Logo.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/rpsLogopng.png"
+        },
+        {
+          "id": "wr3MNIKXP",
+          "name": "old logo.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/oldLogopng.png"
+        },
+        {
+          "id": "BlLj2_-I2",
+          "name": "Disuko Flipping logo.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoFlippingLogopng.png"
+        },
+        {
+          "id": "khOILW4SJ",
+          "name": "pyscway0001.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/pyscway0001Png.png"
+        },
+        {
+          "id": "2S6kU5g_q",
+          "name": "image 16",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image16.png"
+        },
+        {
+          "id": "yhyFAIz54",
+          "name": "image 17",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image17.png"
+        },
+        {
+          "id": "kYbqYAM5s",
+          "name": "0126.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/_0126Png.png"
+        },
+        {
+          "id": "xqV52UWe-",
+          "name": "image_2023-03-03_170212160.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image20230303170212160Png.png"
         }
       ],
       "indirect": false,
@@ -916,6 +1082,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.212",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.212/dist/plasmic.schema.json"
+  "cliVersion": "0.1.217",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.217/dist/plasmic.schema.json"
 }

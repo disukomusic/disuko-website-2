@@ -8,10 +8,10 @@
   padding: 140px 64px 0px;
 }
 .columns {
-  flex-direction: row;
   display: flex;
   position: relative;
   max-width: none;
+  flex-direction: row;
   width: 100%;
   height: auto;
   flex-shrink: 0;
@@ -20,8 +20,8 @@
 }
 .columns > :global(.__wab_flex-container) {
   flex-direction: row;
-  flex-wrap: nowrap;
   align-items: stretch;
+  flex-wrap: nowrap;
   min-width: 0;
   margin-left: calc(0px - 64px);
   width: calc(100% + 64px);

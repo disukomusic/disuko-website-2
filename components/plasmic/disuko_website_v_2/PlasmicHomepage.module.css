@@ -22,8 +22,8 @@
   margin-bottom: 0px;
 }
 .freeBox__fu4Gi {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background: none;
@@ -335,7 +335,6 @@
     flex-wrap: nowrap;
     align-content: stretch;
     overflow: hidden;
-    flex-column-gap: 0px;
     display: none;
   }
 }
@@ -359,7 +358,6 @@
     justify-content: flex-start;
     display: flex;
     flex-direction: row;
-    flex-row-gap: 0px;
   }
 }
 .link__ysjXi {
@@ -414,7 +412,6 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    flex-row-gap: 0px;
   }
 }
 .img__tSjvo {
@@ -456,7 +453,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .greeting3 {
@@ -812,7 +808,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-row-gap: 0px;
     display: none;
   }
 }
@@ -856,7 +851,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .img__c9Iym {
@@ -993,7 +987,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-row-gap: 0px;
     display: none;
   }
 }
@@ -1037,7 +1030,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .img__xp9M {
@@ -1175,7 +1167,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-row-gap: 0px;
     display: none;
   }
 }
@@ -1219,7 +1210,6 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .img___2OVuv {
