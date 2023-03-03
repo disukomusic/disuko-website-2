@@ -305,6 +305,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                   href={`/music`}
                   platform={"nextjs"}
                   target={"_blank" as const}
+                  title={"disuko.gay/music" as const}
                 >
                   {"Music"}
                 </p.PlasmicLink>

@@ -186,7 +186,7 @@ function PlasmicNavbar__RenderFunc(props: {
             component={Link}
             href={`/music`}
             platform={"nextjs"}
-            title={"home" as const}
+            title={"music" as const}
           >
             <HeadphonessvgIcon
               className={classNames(projectcss.all, sty.svg__r4C8D)}
@@ -202,7 +202,7 @@ function PlasmicNavbar__RenderFunc(props: {
               component={Link}
               href={`/links`}
               platform={"nextjs"}
-              title={"merch" as const}
+              title={"links" as const}
             >
               <LinksvgIcon
                 className={classNames(projectcss.all, sty.svg__kcwLa)}
@@ -218,7 +218,7 @@ function PlasmicNavbar__RenderFunc(props: {
             component={Link}
             href={`/portfolio`}
             platform={"nextjs"}
-            title={"merch" as const}
+            title={"portfolio" as const}
           >
             <BriefcasesvgIcon
               className={classNames(projectcss.all, sty.svg__dMqJq)}
