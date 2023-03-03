@@ -55,7 +55,8 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 export type PlasmicFooter__OverridesType = {
   root?: p.Flex<"div">;
   columns?: p.Flex<"div">;
-  img?: p.Flex<typeof p.PlasmicImg>;
+  freeBox?: p.Flex<"div">;
+  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultFooterProps {
@@ -128,10 +129,8 @@ function PlasmicFooter__RenderFunc(props: {
       >
         <div className={classNames(projectcss.all, sty.column__laFb)}>
           <p.PlasmicImg
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
             alt={""}
-            className={classNames(sty.img)}
+            className={classNames(sty.img__jvX8Z)}
             displayHeight={"auto" as const}
             displayMaxHeight={"none" as const}
             displayMaxWidth={"10%" as const}
@@ -140,24 +139,59 @@ function PlasmicFooter__RenderFunc(props: {
             displayWidth={"auto" as const}
             loading={"lazy" as const}
             src={{
-              src: "/plasmic/disuko_website_v_2/images/avatarsMy1B7Tt58RV9RrB51P287GT240X240Jpg.jpeg",
-              fullWidth: 240,
-              fullHeight: 240,
+              src: "/plasmic/disuko_website_v_2/images/logoFace2023Png.png",
+              fullWidth: 3000,
+              fullHeight: 3000,
               aspectRatio: undefined
             }}
           />
         </div>
 
         <div className={classNames(projectcss.all, sty.column__taxvx)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__eBf9G
-            )}
-          >
-            {"website © disuko & Red Panda Media 2022"}
-          </div>
+          {true ? (
+            <div
+              data-plasmic-name={"freeBox"}
+              data-plasmic-override={overrides.freeBox}
+              className={classNames(projectcss.all, sty.freeBox)}
+            >
+              <p.PlasmicLink
+                data-plasmic-name={"link"}
+                data-plasmic-override={overrides.link}
+                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                component={Link}
+                href={"https://www.ohhey.gay/gay-gives" as const}
+                platform={"nextjs"}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__u6CL)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"100%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"56px" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/disuko_website_v_2/images/image18.png",
+                    fullWidth: 2101,
+                    fullHeight: 922,
+                    aspectRatio: undefined
+                  }}
+                />
+              </p.PlasmicLink>
+
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__eBf9G
+                )}
+              >
+                {"website © disuko & Red Panda Media 2022"}
+              </div>
+            </div>
+          ) : null}
         </div>
 
         <div className={classNames(projectcss.all, sty.column___2F5Fj)}>
@@ -177,9 +211,10 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "img"],
-  columns: ["columns", "img"],
-  img: ["img"]
+  root: ["root", "columns", "freeBox", "link"],
+  columns: ["columns", "freeBox", "link"],
+  freeBox: ["freeBox", "link"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -187,7 +222,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   columns: "div";
-  img: typeof p.PlasmicImg;
+  freeBox: "div";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -252,7 +288,8 @@ export const PlasmicFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
-    img: makeNodeComponent("img"),
+    freeBox: makeNodeComponent("freeBox"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
