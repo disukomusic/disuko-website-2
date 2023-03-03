@@ -47,6 +47,7 @@ import XsvgIcon from "./icons/PlasmicIcon__Xsvg"; // plasmic-import: LUQvvF4qlM/
 import HomesvgIcon from "./icons/PlasmicIcon__Homesvg"; // plasmic-import: L0zI9S_Iq6/icon
 import HeadphonessvgIcon from "./icons/PlasmicIcon__Headphonessvg"; // plasmic-import: yb2-zw2oZD/icon
 import LinksvgIcon from "./icons/PlasmicIcon__Linksvg"; // plasmic-import: CChSiJgS1z/icon
+import BriefcasesvgIcon from "./icons/PlasmicIcon__Briefcasesvg"; // plasmic-import: sqFENA_C-8/icon
 import ShirtsvgIcon from "./icons/PlasmicIcon__Shirtsvg"; // plasmic-import: BmJEOaCAlD/icon
 
 export type PlasmicNavbar__VariantMembers = {};
@@ -65,6 +66,7 @@ export type PlasmicNavbar__OverridesType = {
   home?: p.Flex<"a"> & Partial<LinkProps>;
   music?: p.Flex<"a"> & Partial<LinkProps>;
   links?: p.Flex<"a"> & Partial<LinkProps>;
+  portfolio?: p.Flex<"a"> & Partial<LinkProps>;
   merch?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
@@ -210,6 +212,21 @@ function PlasmicNavbar__RenderFunc(props: {
           ) : null}
 
           <p.PlasmicLink
+            data-plasmic-name={"portfolio"}
+            data-plasmic-override={overrides.portfolio}
+            className={classNames(projectcss.all, projectcss.a, sty.portfolio)}
+            component={Link}
+            href={`/portfolio`}
+            platform={"nextjs"}
+            title={"merch" as const}
+          >
+            <BriefcasesvgIcon
+              className={classNames(projectcss.all, sty.svg__dMqJq)}
+              role={"img"}
+            />
+          </p.PlasmicLink>
+
+          <p.PlasmicLink
             data-plasmic-name={"merch"}
             data-plasmic-override={overrides.merch}
             className={classNames(projectcss.all, projectcss.a, sty.merch)}
@@ -237,12 +254,13 @@ function PlasmicNavbar__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "img", "home", "music", "links", "merch"],
+  root: ["root", "link", "img", "home", "music", "links", "portfolio", "merch"],
   link: ["link", "img"],
   img: ["img"],
   home: ["home"],
   music: ["music"],
   links: ["links"],
+  portfolio: ["portfolio"],
   merch: ["merch"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -255,6 +273,7 @@ type NodeDefaultElementType = {
   home: "a";
   music: "a";
   links: "a";
+  portfolio: "a";
   merch: "a";
 };
 
@@ -324,6 +343,7 @@ export const PlasmicNavbar = Object.assign(
     home: makeNodeComponent("home"),
     music: makeNodeComponent("music"),
     links: makeNodeComponent("links"),
+    portfolio: makeNodeComponent("portfolio"),
     merch: makeNodeComponent("merch"),
 
     // Metadata about props expected for PlasmicNavbar

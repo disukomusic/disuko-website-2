@@ -1703,7 +1703,7 @@ export const PlasmicPortfolio = Object.assign(
     pageMetadata: {
       title: "disuko - portfolio🌸",
       description:
-        "~all of my compiled work, including music, 3D, design, and video.",
+        "~all of my completed /ongoing work, including music, 3D, design, and video.",
       ogImageSrc:
         "https://site-assets.plasmic.app/f33b16e8e3629b301959c659f5c8f11d.jpg",
       canonical: "https://disuko.gay/portfolio"

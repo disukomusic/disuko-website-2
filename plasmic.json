@@ -38,7 +38,8 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -57,7 +58,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -76,7 +78,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -110,7 +113,8 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "wJAowqBqcWtGU49FNparet",
@@ -378,7 +382,8 @@
           "name": "Slider",
           "componentImportPath": "react-slick"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "itBdcjth19Wasd6ngAYxWR",
@@ -407,7 +412,8 @@
           "name": "FollowWrapper",
           "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -426,7 +432,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "bsHvoheJaXyaeWhnCxRakT",
@@ -716,6 +723,16 @@
           "id": "CChSiJgS1z",
           "name": "LinksvgIcon",
           "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__Linksvg.tsx"
+        },
+        {
+          "id": "i5ou6BpcFg",
+          "name": "LetterCasesvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__LetterCasesvg.tsx"
+        },
+        {
+          "id": "sqFENA_C-8",
+          "name": "BriefcasesvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__Briefcasesvg.tsx"
         }
       ],
       "images": [

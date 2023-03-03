@@ -129,7 +129,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   min-width: 0;
-  padding: 8px;
+  padding: 20px;
 }
 .columns > :nth-child(3n + 1) {
   width: calc((100% - 3 * 0px) * 4 / 12);
