@@ -167,9 +167,9 @@ function PlasmicFooter__RenderFunc(props: {
               displayWidth={"56px" as const}
               loading={"lazy" as const}
               src={{
-                src: "/plasmic/disuko_website_v_2/images/image18.png",
-                fullWidth: 2101,
-                fullHeight: 922,
+                src: "/plasmic/disuko_website_v_2/images/dotGayRgBpng.png",
+                fullWidth: 210,
+                fullHeight: 92,
                 aspectRatio: undefined
               }}
             />
