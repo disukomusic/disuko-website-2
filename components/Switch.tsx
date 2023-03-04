@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   PlasmicSwitch,
   DefaultSwitchProps
-} from "./plasmic/disuko_website/PlasmicSwitch";
+} from "./plasmic/disuko_website_v_2/PlasmicSwitch";
 import { SwitchRef } from "@plasmicapp/react-web";
 
 interface SwitchProps extends DefaultSwitchProps {

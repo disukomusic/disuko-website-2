@@ -112,25 +112,15 @@
   height: auto;
   max-width: 100%;
   justify-content: center;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.freeBox {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+  align-items: flex-start;
   min-width: 0;
   padding: 8px;
 }
 .link {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .img__u6CL {
   object-fit: cover;
@@ -143,6 +133,18 @@
 }
 .img__u6CL > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
 }
 .text__eBf9G {
   width: 100%;

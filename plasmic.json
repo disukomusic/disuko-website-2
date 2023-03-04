@@ -586,6 +586,90 @@
           "cssFilePath": "plasmic/disuko_website_v_2/PlasmicPortfolio.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Zi5V_b_8iY8",
+          "name": "Select",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSelect.tsx",
+          "importSpec": {
+            "modulePath": "Select.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSelect.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "FLM-PtM21gf",
+          "name": "Select__Option",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSelect__Option.tsx",
+          "importSpec": {
+            "modulePath": "Select__Option.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSelect__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "RKGJ5yqmTC3",
+          "name": "Select__OptionGroup",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSelect__OptionGroup.tsx",
+          "importSpec": {
+            "modulePath": "Select__OptionGroup.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSelect__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "65tuioDom8B",
+          "name": "Select__Overlay",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSelect__Overlay.tsx",
+          "importSpec": {
+            "modulePath": "Select__Overlay.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSelect__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "iWwUl6c3C4S",
+          "name": "Checkbox",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicCheckbox.tsx",
+          "importSpec": {
+            "modulePath": "Checkbox.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicCheckbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        },
+        {
+          "id": "cQIvjpTj7dg",
+          "name": "Switch",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicSwitch.tsx",
+          "importSpec": {
+            "modulePath": "Switch.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicSwitch.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "switch"
         }
       ],
       "icons": [
@@ -733,6 +817,31 @@
           "id": "sqFENA_C-8",
           "name": "BriefcasesvgIcon",
           "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__Briefcasesvg.tsx"
+        },
+        {
+          "id": "ubvIrNI5vPk",
+          "name": "ChevronDownsvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__ChevronDownsvg.tsx"
+        },
+        {
+          "id": "M61i9m0MmpU",
+          "name": "ChevronUpsvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__ChevronUpsvg.tsx"
+        },
+        {
+          "id": "z8g_4LTzExw",
+          "name": "SquaresvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__Squaresvg.tsx"
+        },
+        {
+          "id": "k5NJ_dqxdOT",
+          "name": "SquareCheckFilledsvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__SquareCheckFilledsvg.tsx"
+        },
+        {
+          "id": "N5BgNZCvAe6",
+          "name": "SquareMinussvgIcon",
+          "moduleFilePath": "plasmic/disuko_website_v_2/icons/PlasmicIcon__SquareMinussvg.tsx"
         }
       ],
       "images": [
@@ -1065,6 +1174,11 @@
           "id": "5qsEUfQ9k",
           "name": "image 18",
           "filePath": "../public/plasmic/disuko_website_v_2/images/image18.png"
+        },
+        {
+          "id": "Zcf_as6rN",
+          "name": "logo face small.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/logoFaceSmalljpg.jpeg"
         }
       ],
       "indirect": false,
