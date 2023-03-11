@@ -341,54 +341,6 @@ function PlasmicLinks__RenderFunc(props: {
               </p.PlasmicLink>
             </Tilt>
 
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__uxoHd)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10 as const}
-              tiltMaxAngleY={10 as const}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__boCmj
-                )}
-                component={Link}
-                href={"https://gofund.me/f8bb50d2" as const}
-                platform={"nextjs"}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.columns___3FVbr)}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.column__kKuq2)}
-                  >
-                    <PigMoneysvgIcon
-                      className={classNames(projectcss.all, sty.svg__ykGcF)}
-                      role={"img"}
-                    />
-                  </div>
-
-                  <div
-                    className={classNames(projectcss.all, sty.column__j0Jkx)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___5O7Jg
-                      )}
-                    >
-                      {"balisong rave gofundme"}
-                    </div>
-                  </div>
-                </div>
-              </p.PlasmicLink>
-            </Tilt>
-
             {true ? (
               <Tilt
                 className={classNames("__wab_instance", sty.tilt__wfpGx)}

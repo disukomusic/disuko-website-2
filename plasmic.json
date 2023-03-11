@@ -1320,6 +1320,21 @@
           "id": "wfbBU0_Sv",
           "name": "Disuko pixel panda top half.png",
           "filePath": "../public/plasmic/disuko_website_v_2/images/disukoPixelPandaTopHalfpng.png"
+        },
+        {
+          "id": "x-u1u9D3A",
+          "name": "Logo 128x128.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/logo128X128Png.png"
+        },
+        {
+          "id": "6izZkhgBm",
+          "name": "VideoScreenshot--YouTube-MyTOP5AudioGearfor2023-0’55”.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/videoScreenshotYouTubeMyTop5AudioGearfor2023055Jpg.jpeg"
+        },
+        {
+          "id": "psVMjl0fn",
+          "name": "image_2023-03-11_151017196.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/image20230311151017196Png.png"
         }
       ],
       "indirect": false,
@@ -1354,7 +1369,8 @@
           "name": "CommerceProviderComponent",
           "componentImportPath": "@plasmicpkgs/commerce-shopify"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "xp1p7dmg329XVLHyuEUxD2",
@@ -1448,7 +1464,8 @@
           "name": "ProductMediaCollection",
           "componentImportPath": "@plasmicpkgs/commerce"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

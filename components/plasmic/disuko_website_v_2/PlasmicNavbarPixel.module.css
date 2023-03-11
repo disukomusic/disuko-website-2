@@ -1,9 +1,5 @@
 .root:global(.__wab_instance) {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
   max-width: 100%;
   object-fit: cover;
   color: #ffffff;
@@ -15,6 +11,9 @@
   width: 100%;
   height: auto;
   box-shadow: 0px 4px 16px 0px #00000033;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   min-width: 0;
   -webkit-backdrop-filter: none;
   -webkit-transition-property: all;
@@ -42,6 +41,7 @@
 .img__rUFf {
   object-fit: cover;
   height: 40px;
+  margin: 10px;
 }
 .img__rUFf > picture > img {
   object-fit: cover;
@@ -80,7 +80,7 @@
 .img__bfiHu {
   position: relative;
   object-fit: contain;
-  max-width: 50%;
+  max-width: 30%;
 }
 .img__bfiHu > picture > img {
   object-fit: contain;
@@ -102,7 +102,7 @@
 .img__nzbvf {
   position: relative;
   object-fit: cover;
-  max-width: 50%;
+  max-width: 30%;
 }
 .img__nzbvf > picture > img {
   object-fit: cover;
@@ -124,7 +124,7 @@
 .img__xe5Ck {
   position: relative;
   object-fit: cover;
-  max-width: 50%;
+  max-width: 30%;
 }
 .img__xe5Ck > picture > img {
   object-fit: cover;
@@ -136,6 +136,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: auto;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .portfolio {
@@ -146,7 +147,7 @@
 .img__qi9Zc {
   position: relative;
   object-fit: cover;
-  max-width: 50%;
+  max-width: 30%;
 }
 .img__qi9Zc > picture > img {
   object-fit: cover;
@@ -168,7 +169,7 @@
 .img__uzAa6 {
   position: relative;
   object-fit: cover;
-  max-width: 50%;
+  max-width: 30%;
 }
 .img__uzAa6 > picture > img {
   object-fit: cover;

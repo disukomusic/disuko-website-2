@@ -470,7 +470,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                         sty.text___2PXz5
                       )}
                     >
-                      {"for MIDI performance"}
+                      {"for MIDI based performance"}
                     </div>
 
                     <p.PlasmicLink
@@ -495,9 +495,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                         displayWidth={"100%" as const}
                         loading={"lazy" as const}
                         src={{
-                          src: "/plasmic/disuko_website_v_2/images/image20230303170212160Png.png",
+                          src: "/plasmic/disuko_website_v_2/images/image20230311151017196Png.png",
                           fullWidth: 1920,
-                          fullHeight: 1080,
+                          fullHeight: 995,
                           aspectRatio: undefined
                         }}
                       />
@@ -522,7 +522,7 @@ function PlasmicPortfolio__RenderFunc(props: {
                       platform={"nextjs"}
                       target={"_blank" as const}
                     >
-                      {"Live Performance"}
+                      {"Live Performance (DJing)"}
                     </p.PlasmicLink>
 
                     <p.PlasmicLink

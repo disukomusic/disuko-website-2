@@ -170,7 +170,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(sty.img__bfiHu)}
               displayHeight={"auto" as const}
               displayMaxHeight={"none" as const}
-              displayMaxWidth={"50%" as const}
+              displayMaxWidth={"30%" as const}
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"auto" as const}
@@ -198,7 +198,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(sty.img__nzbvf)}
               displayHeight={"auto" as const}
               displayMaxHeight={"none" as const}
-              displayMaxWidth={"50%" as const}
+              displayMaxWidth={"30%" as const}
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"auto" as const}
@@ -227,7 +227,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
                 className={classNames(sty.img__xe5Ck)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
-                displayMaxWidth={"50%" as const}
+                displayMaxWidth={"30%" as const}
                 displayMinHeight={"0" as const}
                 displayMinWidth={"0" as const}
                 displayWidth={"auto" as const}
@@ -256,7 +256,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(sty.img__qi9Zc)}
               displayHeight={"auto" as const}
               displayMaxHeight={"none" as const}
-              displayMaxWidth={"50%" as const}
+              displayMaxWidth={"30%" as const}
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"auto" as const}
@@ -284,7 +284,7 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               className={classNames(sty.img__uzAa6)}
               displayHeight={"auto" as const}
               displayMaxHeight={"none" as const}
-              displayMaxWidth={"50%" as const}
+              displayMaxWidth={"30%" as const}
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
               displayWidth={"auto" as const}

@@ -100,6 +100,20 @@ function PlasmicRetrogames__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "variable",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => "" as const
+          : undefined
+      }
+    ],
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantswajuQ4R1DeAga()
@@ -175,26 +189,6 @@ function PlasmicRetrogames__RenderFunc(props: {
             className={classNames("__wab_instance", sty.navbarPixel)}
           />
 
-          <div className={classNames(projectcss.all, sty.freeBox___19A9)}>
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img___013R)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"10%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"100%" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/disuko_website_v_2/images/disukoPixelPandaTopHalfpng.png",
-                fullWidth: 480,
-                fullHeight: 289,
-                aspectRatio: undefined
-              }}
-            />
-          </div>
-
           <div
             data-plasmic-name={"columns"}
             data-plasmic-override={overrides.columns}
@@ -213,460 +207,575 @@ function PlasmicRetrogames__RenderFunc(props: {
             ) : null}
 
             <div className={classNames(projectcss.all, sty.column__mJhXk)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img___013R)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"10%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"100%" as const}
+                loading={"lazy" as const}
+                onMouseOver={async event => {
+                  const $steps = {};
+                }}
+                src={{
+                  src: "/plasmic/disuko_website_v_2/images/disukoPixelPandaTopHalfpng.png",
+                  fullWidth: 480,
+                  fullHeight: 289,
+                  aspectRatio: undefined
+                }}
+              />
+
               {true ? (
-                <div className={classNames(projectcss.all, sty.freeBox__ahq62)}>
+                <div className={classNames(projectcss.all, sty.freeBox__jeJgv)}>
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ahq62)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__oj5Ek
+                        )}
+                      >
+                        {
+                          "PAGE IS UNDER CONSTRUCTION. ALL CONTENT IS PLACEHOLDER."
+                        }
+                      </div>
+                    </div>
+                  ) : null}
+
                   <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__oj5Ek
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox___32YJg)}
                   >
-                    {
-                      "PAGE IS UNDER CONSTRUCTION. ALL CONTENT IS PLACEHOLDER. HOW DID YOU EVEN FIND THIS???"
-                    }
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__iDpS6
+                      )}
+                    >
+                      {
+                        "This page is to show off some of my modded retro game consoles! If item is listed for sale, contact disukomusic@gmail.com for purchase."
+                      }
+                    </div>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__qfbt1)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fvPXy)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__venUi
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"Disuko DMG"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img___7KJj4)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"none" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"100%" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/disuko_website_v_2/images/disukoDmGjpg.jpeg",
+                          fullWidth: 512,
+                          fullHeight: 512,
+                          aspectRatio: undefined
+                        }}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__lYruF
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#9F4343" }}
+                          >
+                            {"$NFS"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ozLYm
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"Upgrades:"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-Glass Screen Lens"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Shell"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Buttons"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-OEM Membranes"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"ToDo:"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-Upgrade Screen"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {'-Custom "Disuko" label'}
+                          </span>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__rQbpv)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__yVCq
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"Disuko GBP"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__uLz3X)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"none" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"100%" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/disuko_website_v_2/images/disukoGbPjpg.jpeg",
+                          fullWidth: 512,
+                          fullHeight: 512,
+                          aspectRatio: undefined
+                        }}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nyAoS
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#9F4343" }}
+                          >
+                            {"$NFS"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__aqOb
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"Upgrades:"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Screen Lens"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Shell"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Buttons"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-OEM Membranes"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"ToDo:"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-Upgrade Screen"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {'-Custom "Disuko" label'}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                        </React.Fragment>
+                      </div>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gr3Lf)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__gh8Dy
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"Disuko GBA"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+
+                      <p.PlasmicImg
+                        alt={""}
+                        className={classNames(sty.img__xot9F)}
+                        displayHeight={"auto" as const}
+                        displayMaxHeight={"none" as const}
+                        displayMaxWidth={"100%" as const}
+                        displayMinHeight={"0" as const}
+                        displayMinWidth={"0" as const}
+                        displayWidth={"auto" as const}
+                        loading={"lazy" as const}
+                        src={{
+                          src: "/plasmic/disuko_website_v_2/images/disukoGbAjpg.jpeg",
+                          fullWidth: 512,
+                          fullHeight: 512,
+                          aspectRatio: undefined
+                        }}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__roODv
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#9F4343" }}
+                          >
+                            {"$NFS"}
+                          </span>
+                        </React.Fragment>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ym33H
+                        )}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"Upgrades:"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-Glass Screen Lens"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Shell"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Buttons"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-New Membranes"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-Custom sylveon shell decal"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"ToDo:"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {"-Higher quality back labels"}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                          <React.Fragment>{"\n"}</React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ color: "#FFFFFF" }}
+                          >
+                            {""}
+                          </span>
+                        </React.Fragment>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ) : null}
-
-              <div className={classNames(projectcss.all, sty.freeBox___32YJg)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iDpS6
-                  )}
-                >
-                  {
-                    "This page is to show off some of my modded retro game consoles! If item is listed for sale, contact disukomusic@gmail.com for purchase."
-                  }
-                </div>
-              </div>
-
-              <div className={classNames(projectcss.all, sty.freeBox__qfbt1)}>
-                <div className={classNames(projectcss.all, sty.freeBox__fvPXy)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__venUi
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Disuko DMG"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___7KJj4)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100%" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/disuko_website_v_2/images/disukoDmGjpg.jpeg",
-                      fullWidth: 512,
-                      fullHeight: 512,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__lYruF
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#9F4343" }}
-                      >
-                        {"$NFS"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ozLYm
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Upgrades:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-Glass Screen Lens"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Shell"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Buttons"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-OEM Membranes"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"ToDo:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-Upgrade Screen"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {'-Custom "Disuko" label'}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.freeBox__rQbpv)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yVCq
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Disuko GBP"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__uLz3X)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"none" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"100%" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/disuko_website_v_2/images/disukoGbPjpg.jpeg",
-                      fullWidth: 512,
-                      fullHeight: 512,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__nyAoS
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#9F4343" }}
-                      >
-                        {"$NFS"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__aqOb
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Upgrades:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Screen Lens"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Shell"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Buttons"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-OEM Membranes"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"ToDo:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-Upgrade Screen"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {'-Custom "Disuko" label'}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                </div>
-
-                <div className={classNames(projectcss.all, sty.freeBox__gr3Lf)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__gh8Dy
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Disuko GBA"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__xot9F)}
-                    displayHeight={"auto" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: "/plasmic/disuko_website_v_2/images/disukoGbAjpg.jpeg",
-                      fullWidth: 512,
-                      fullHeight: 512,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__roODv
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#9F4343" }}
-                      >
-                        {"$NFS"}
-                      </span>
-                    </React.Fragment>
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__ym33H
-                    )}
-                  >
-                    <React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"Upgrades:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-Glass Screen Lens"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Shell"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Buttons"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-New Membranes"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-Custom sylveon shell decal"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"ToDo:"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {"-Higher quality back labels"}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                      <React.Fragment>{"\n"}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ color: "#FFFFFF" }}
-                      >
-                        {""}
-                      </span>
-                    </React.Fragment>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {(

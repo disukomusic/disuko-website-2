@@ -563,7 +563,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 displayWidth={"100%" as const}
                                 loading={"lazy" as const}
                                 src={{
-                                  src: "/plasmic/disuko_website_v_2/images/videoScreenshotYouTubeWorththehypeMachinewisePrymaReview119Jpg.jpeg",
+                                  src: "/plasmic/disuko_website_v_2/images/videoScreenshotYouTubeMyTop5AudioGearfor2023055Jpg.jpeg",
                                   fullWidth: 1920,
                                   fullHeight: 1080,
                                   aspectRatio: undefined
@@ -920,7 +920,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     "mobileOnly"
                                   )
                                     ? {
-                                        src: "/plasmic/disuko_website_v_2/images/videoScreenshotYouTubeWorththehypeMachinewisePrymaReview119Jpg.jpeg",
+                                        src: "/plasmic/disuko_website_v_2/images/videoScreenshotYouTubeMyTop5AudioGearfor2023055Jpg.jpeg",
                                         fullWidth: 1920,
                                         fullHeight: 1080,
                                         aspectRatio: undefined
@@ -1352,67 +1352,63 @@ function PlasmicHomepage__RenderFunc(props: {
                       ) : null}
                     </div>
                   ) : null}
-
-                  <div
-                    data-plasmic-name={"contact"}
-                    data-plasmic-override={overrides.contact}
-                    className={classNames(projectcss.all, sty.contact)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vM57J
-                      )}
-                    >
-                      {"always open for inquires!"}
-                    </div>
-
-                    <main
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.main__a7HYo
-                      )}
-                    >
-                      {
-                        "feel free to send me a message about anything you like. topics might include collaboration, usage rights, ice cream flavors, free verse poetry, etc..."
-                      }
-                    </main>
-
-                    <p.PlasmicLink
-                      data-plasmic-name={"mail"}
-                      data-plasmic-override={overrides.mail}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.mail
-                      )}
-                      component={Link}
-                      href={"mailto:disukomusic@gmail.com" as const}
-                      platform={"nextjs"}
-                      target={"_blank" as const}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__q87Lt
-                        )}
-                      >
-                        {"send email"}
-                      </div>
-                    </p.PlasmicLink>
-                  </div>
                 </Reveal>
               ) : null}
 
-              <Footer
-                data-plasmic-name={"footer"}
-                data-plasmic-override={overrides.footer}
-                className={classNames("__wab_instance", sty.footer)}
-              />
+              <div
+                data-plasmic-name={"contact"}
+                data-plasmic-override={overrides.contact}
+                className={classNames(projectcss.all, sty.contact)}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vM57J
+                  )}
+                >
+                  {"always open for inquires!"}
+                </div>
+
+                <main
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.main__a7HYo
+                  )}
+                >
+                  {
+                    "feel free to send me a message about anything you like. topics might include collaboration, usage rights, ice cream flavors, free verse poetry, etc..."
+                  }
+                </main>
+
+                <p.PlasmicLink
+                  data-plasmic-name={"mail"}
+                  data-plasmic-override={overrides.mail}
+                  className={classNames(projectcss.all, projectcss.a, sty.mail)}
+                  component={Link}
+                  href={"mailto:disukomusic@gmail.com" as const}
+                  platform={"nextjs"}
+                  target={"_blank" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__q87Lt
+                    )}
+                  >
+                    {"send email"}
+                  </div>
+                </p.PlasmicLink>
+              </div>
             </p.Stack>
+
+            <Footer
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
+              className={classNames("__wab_instance", sty.footer)}
+            />
           </div>
         ) : null}
       </div>
@@ -1479,9 +1475,7 @@ const PlasmicDescendants = {
     "greeting11",
     "greeting12",
     "greeting13",
-    "greeting14",
-    "contact",
-    "mail"
+    "greeting14"
   ],
   columns: [
     "columns",
