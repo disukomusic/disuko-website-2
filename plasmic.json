@@ -696,6 +696,19 @@
           "cssFilePath": "plasmic/disuko_website_v_2/PlasmicNavbarPixel.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "EtLrAaCqNS",
+          "name": "FooterPixel",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicFooterPixel.tsx",
+          "importSpec": {
+            "modulePath": "FooterPixel.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicFooterPixel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

@@ -36,7 +36,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import NavbarPixel from "../../NavbarPixel"; // plasmic-import: i-jxMljO8wt/component
-import Footer from "../../Footer"; // plasmic-import: phAOjgqEmd/component
+import FooterPixel from "../../FooterPixel"; // plasmic-import: EtLrAaCqNS/component
 
 import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
 
@@ -58,7 +58,7 @@ export type PlasmicRetrogames__OverridesType = {
   root?: p.Flex<"div">;
   navbarPixel?: p.Flex<typeof NavbarPixel>;
   columns?: p.Flex<"div">;
-  footer?: p.Flex<typeof Footer>;
+  footerPixel?: p.Flex<typeof FooterPixel>;
 };
 
 export interface DefaultRetrogamesProps {}
@@ -791,10 +791,10 @@ function PlasmicRetrogames__RenderFunc(props: {
             ) : null}
           </div>
 
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
+          <FooterPixel
+            data-plasmic-name={"footerPixel"}
+            data-plasmic-override={overrides.footerPixel}
+            className={classNames("__wab_instance", sty.footerPixel)}
           />
         </div>
       </div>
@@ -803,10 +803,10 @@ function PlasmicRetrogames__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbarPixel", "columns", "footer"],
+  root: ["root", "navbarPixel", "columns", "footerPixel"],
   navbarPixel: ["navbarPixel"],
   columns: ["columns"],
-  footer: ["footer"]
+  footerPixel: ["footerPixel"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -815,7 +815,7 @@ type NodeDefaultElementType = {
   root: "div";
   navbarPixel: typeof NavbarPixel;
   columns: "div";
-  footer: typeof Footer;
+  footerPixel: typeof FooterPixel;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -881,7 +881,7 @@ export const PlasmicRetrogames = Object.assign(
     // Helper components rendering sub-elements
     navbarPixel: makeNodeComponent("navbarPixel"),
     columns: makeNodeComponent("columns"),
-    footer: makeNodeComponent("footer"),
+    footerPixel: makeNodeComponent("footerPixel"),
 
     // Metadata about props expected for PlasmicRetrogames
     internalVariantProps: PlasmicRetrogames__VariantProps,
