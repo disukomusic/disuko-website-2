@@ -670,6 +670,32 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "switch"
+        },
+        {
+          "id": "Z39exjNTcmC",
+          "name": "Retrogames",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicRetrogames.tsx",
+          "importSpec": {
+            "modulePath": "../pages/retro.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicRetrogames.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "i-jxMljO8wt",
+          "name": "NavbarPixel",
+          "type": "managed",
+          "projectId": "bsHvoheJaXyaeWhnCxRakT",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicNavbarPixel.tsx",
+          "importSpec": {
+            "modulePath": "NavbarPixel.tsx"
+          },
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicNavbarPixel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1184,10 +1210,120 @@
           "id": "J3vil1XOZ",
           "name": "dotGay__RGB.png",
           "filePath": "../public/plasmic/disuko_website_v_2/images/dotGayRgBpng.png"
+        },
+        {
+          "id": "fKmQJ6qzA",
+          "name": "Retro Games logo.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/retroGamesLogopng.png"
+        },
+        {
+          "id": "x_tW0zgDL",
+          "name": "Retro Games logo.png 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/retroGamesLogopng2.png"
+        },
+        {
+          "id": "eeghFFYEx",
+          "name": "disuko logo.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoLogopng.png"
+        },
+        {
+          "id": "bAAFhB4sL",
+          "name": "Disuko Pixel.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoPixelpng.png"
+        },
+        {
+          "id": "pwjlifaaF",
+          "name": "Background Tiles.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/backgroundTilespng.png"
+        },
+        {
+          "id": "Mnuc1SPtO",
+          "name": "Background Tiles.png 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/backgroundTilespng2.png"
+        },
+        {
+          "id": "-9dYzjKle",
+          "name": "Home.png 3",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/homepng3.png"
+        },
+        {
+          "id": "foy7WQdWL",
+          "name": "Music.png 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/musicpng2.png"
+        },
+        {
+          "id": "sVnF_Oye0",
+          "name": "Links.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/linkspng.png"
+        },
+        {
+          "id": "awWr5B5tw",
+          "name": "Portfoflio.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/portfofliopng.png"
+        },
+        {
+          "id": "HmavU8sAo",
+          "name": "Shirt.png 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/shirtpng2.png"
+        },
+        {
+          "id": "W50i-FYn6",
+          "name": "Disuko DMG.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoDmGjpg.jpeg"
+        },
+        {
+          "id": "EO6QRh4TF",
+          "name": "Disuko GBP.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoGbPjpg.jpeg"
+        },
+        {
+          "id": "eAzwTHaRW",
+          "name": "Disuko GBA.jpg",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoGbAjpg.jpeg"
+        },
+        {
+          "id": "lskiAPRs5",
+          "name": "Home.png 4",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/homepng4.png"
+        },
+        {
+          "id": "k6SSxtv2r",
+          "name": "Music.png 3",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/musicpng3.png"
+        },
+        {
+          "id": "eolx3sCZW",
+          "name": "Portfoflio.png 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/portfofliopng2.png"
+        },
+        {
+          "id": "4MafLa6ul",
+          "name": "Shirt.png 3",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/shirtpng3.png"
+        },
+        {
+          "id": "3xhG0my6l",
+          "name": "Links.png 2",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/linkspng2.png"
+        },
+        {
+          "id": "dxDSK2JMr",
+          "name": "Home.png 5",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/homepng5.png"
+        },
+        {
+          "id": "bhuog1NsM",
+          "name": "Disuko Panda Pixel.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoPandaPixelpng.png"
+        },
+        {
+          "id": "wfbBU0_Sv",
+          "name": "Disuko pixel panda top half.png",
+          "filePath": "../public/plasmic/disuko_website_v_2/images/disukoPixelPandaTopHalfpng.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/disuko_website_v_2/PlasmicGlobalContextsProvider.tsx",
       "codeComponents": [
         {
           "id": "RYA6HI8jKe",
@@ -1198,6 +1334,119 @@
           "id": "cex7AsYybP",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "i3z63WaCLuRiSZRBwZC8d1",
+      "projectApiToken": "vFDcPRRkeIndudbVPzzJ6XYFTPaQbbUH7viVQRfVlT6w3AZurCwBghalKWIWYrMiawJ1uBiJ5nGZCgQGR1Tg",
+      "projectName": "commerce-shopify",
+      "version": "6.2.0",
+      "cssFilePath": "plasmic/commerce_shopify/plasmic_commerce_shopify.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/commerce_shopify/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "jKXfoEXfU9R",
+          "name": "CommerceProviderComponent",
+          "componentImportPath": "@plasmicpkgs/commerce-shopify"
+        }
+      ]
+    },
+    {
+      "projectId": "xp1p7dmg329XVLHyuEUxD2",
+      "projectApiToken": "lKmNlwaV4Oj0MW88hxVZ5o5DRgZ8MIE6XICXwHEIus3QTO9JqH6779kr2KkJg7S816qbjShlBQ8PzLYAK4Q",
+      "projectName": "commerce",
+      "version": "11.12.0",
+      "cssFilePath": "plasmic/commerce/plasmic_commerce.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "vU2jzVAnFP",
+          "name": "ProductCollection",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "S1F4q0wN6b",
+          "name": "ProductTextField",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "_PaJxGc8gf",
+          "name": "ProductPriceComponent",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "qpULM0wwWW",
+          "name": "ProductMedia",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "NR7KYUJmEqx",
+          "name": "AddToCartButton",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "CjfQQrwiHjD",
+          "name": "ProductQuantity",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "i3vHZr7erKX",
+          "name": "ProductVariantPicker",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "UGhhaf1AiUhF",
+          "name": "CartComponent",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "1gYJf_XBZUAD",
+          "name": "ProductBox",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "t362fgW6eiCe",
+          "name": "ProductLink",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "ny07p45F84c_",
+          "name": "CategoryCollection",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "hzqiq--xdG5T",
+          "name": "CategoryField",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "fA0CIfqZOwRH",
+          "name": "CategoryLink",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "5k_ZYl4EkcYi",
+          "name": "ProductSlider",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "yOXBNIAJxzUq",
+          "name": "CategoryMedia",
+          "componentImportPath": "@plasmicpkgs/commerce"
+        },
+        {
+          "id": "a5BakxYc5Db_",
+          "name": "ProductMediaCollection",
+          "componentImportPath": "@plasmicpkgs/commerce"
         }
       ]
     }
@@ -1228,6 +1477,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.217",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.217/dist/plasmic.schema.json"
+  "cliVersion": "0.1.221",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.221/dist/plasmic.schema.json"
 }

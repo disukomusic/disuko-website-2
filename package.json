@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
-    "@plasmicapp/cli": "^0.1.217",
+    "@plasmicapp/cli": "^0.1.221",
     "@plasmicapp/host": "^1.0.108",
     "@plasmicapp/loader-nextjs": "^1.0.213",
     "@plasmicapp/react-web": "^0.2.162",
+    "@plasmicpkgs/commerce": "^0.0.105",
+    "@plasmicpkgs/commerce-shopify": "^0.0.110",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.100",
     "@plasmicpkgs/plasmic-nav": "^0.0.63",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.93",

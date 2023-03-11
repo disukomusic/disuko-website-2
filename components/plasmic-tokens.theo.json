@@ -141,6 +141,26 @@
       }
     },
     {
+      "name": "UnnamedStyleToken 3",
+      "type": "color",
+      "value": "#000000",
+      "category": "color",
+      "meta": {
+        "projectId": "bsHvoheJaXyaeWhnCxRakT",
+        "id": "GvmspZbQq"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 4",
+      "type": "color",
+      "value": "#FF8484",
+      "category": "color",
+      "meta": {
+        "projectId": "bsHvoheJaXyaeWhnCxRakT",
+        "id": "AZOtS97dQ"
+      }
+    },
+    {
       "name": "blue border",
       "type": "color",
       "value": "#98BAC9",
