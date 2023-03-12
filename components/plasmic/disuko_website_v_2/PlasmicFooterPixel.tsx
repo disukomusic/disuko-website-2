@@ -164,7 +164,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
                 <React.Fragment>
                   <span
                     className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontWeight: 700 }}
+                    style={{ fontWeight: 400 }}
                   >
                     {"website © disuko & Red Panda Media 2022"}
                   </span>
@@ -209,14 +209,7 @@ function PlasmicFooterPixel__RenderFunc(props: {
               sty.text__g6QyS
             )}
           >
-            <React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ fontWeight: 700 }}
-              >
-                {"icons from tabler"}
-              </span>
-            </React.Fragment>
+            {"icons from tabler"}
           </div>
         </div>
       </p.Stack>
