@@ -239,15 +239,16 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.freeBox___996D
                           )}
                         >
-                          <RetroDisuko
-                            data-plasmic-name={"retroDisuko"}
-                            data-plasmic-override={overrides.retroDisuko}
-                            className={classNames(
-                              "__wab_instance",
-                              sty.retroDisuko
-                            )}
-                          />
-
+                          {true ? (
+                            <RetroDisuko
+                              data-plasmic-name={"retroDisuko"}
+                              data-plasmic-override={overrides.retroDisuko}
+                              className={classNames(
+                                "__wab_instance",
+                                sty.retroDisuko
+                              )}
+                            />
+                          ) : null}
                           {true ? (
                             <div
                               className={classNames(
