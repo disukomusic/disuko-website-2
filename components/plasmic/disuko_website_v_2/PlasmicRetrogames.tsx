@@ -38,6 +38,7 @@ import {
 import NavbarPixel from "../../NavbarPixel"; // plasmic-import: i-jxMljO8wt/component
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import RetroDisuko from "../../RetroDisuko"; // plasmic-import: 26hRODzg9S/component
+import { Iframe } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: CMDBvOhaI4s/codeComponent
 import FooterPixel from "../../FooterPixel"; // plasmic-import: EtLrAaCqNS/component
 
 import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
@@ -62,6 +63,7 @@ export type PlasmicRetrogames__OverridesType = {
   scrollParallax?: p.Flex<typeof ParallaxWrapper>;
   columns?: p.Flex<"div">;
   retroDisuko?: p.Flex<typeof RetroDisuko>;
+  iframe?: p.Flex<typeof Iframe>;
   footerPixel?: p.Flex<typeof FooterPixel>;
 };
 
@@ -803,6 +805,65 @@ function PlasmicRetrogames__RenderFunc(props: {
                     </div>
                   </div>
                 ) : null}
+
+                <div
+                  className={classNames(projectcss.all, sty.freeBox__uW4S0)}
+                />
+
+                <div className={classNames(projectcss.all, sty.freeBox__hUTjQ)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__l7Rd
+                    )}
+                  >
+                    {"MODDING COMISSIONS"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__czhD1
+                    )}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ color: "#FF4141" }}
+                      >
+                        {"Currently Closed"}
+                      </span>
+                    </React.Fragment>
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__rHdtW)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__olUY
+                      )}
+                    >
+                      {
+                        "Offering modding services and custom Gameboy builds!\nFill out this form and I will get back to you\nwith pricing and turnaround times ASAP."
+                      }
+                    </div>
+                  </div>
+                </div>
+
+                <Iframe
+                  data-plasmic-name={"iframe"}
+                  data-plasmic-override={overrides.iframe}
+                  className={classNames("__wab_instance", sty.iframe)}
+                  preview={true}
+                  src={
+                    "https://docs.google.com/forms/d/e/1FAIpQLSelxMKCzh0NNtkdBlX91OL6y-aaky1BMvCVqJziFlfaxjxlSQ/viewform?usp=sf_link" as const
+                  }
+                />
               </div>
 
               {(
@@ -837,12 +898,14 @@ const PlasmicDescendants = {
     "scrollParallax",
     "columns",
     "retroDisuko",
+    "iframe",
     "footerPixel"
   ],
   navbarPixel: ["navbarPixel"],
-  scrollParallax: ["scrollParallax", "columns", "retroDisuko"],
-  columns: ["columns", "retroDisuko"],
+  scrollParallax: ["scrollParallax", "columns", "retroDisuko", "iframe"],
+  columns: ["columns", "retroDisuko", "iframe"],
   retroDisuko: ["retroDisuko"],
+  iframe: ["iframe"],
   footerPixel: ["footerPixel"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -854,6 +917,7 @@ type NodeDefaultElementType = {
   scrollParallax: typeof ParallaxWrapper;
   columns: "div";
   retroDisuko: typeof RetroDisuko;
+  iframe: typeof Iframe;
   footerPixel: typeof FooterPixel;
 };
 
@@ -922,6 +986,7 @@ export const PlasmicRetrogames = Object.assign(
     scrollParallax: makeNodeComponent("scrollParallax"),
     columns: makeNodeComponent("columns"),
     retroDisuko: makeNodeComponent("retroDisuko"),
+    iframe: makeNodeComponent("iframe"),
     footerPixel: makeNodeComponent("footerPixel"),
 
     // Metadata about props expected for PlasmicRetrogames
