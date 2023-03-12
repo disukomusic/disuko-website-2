@@ -128,17 +128,11 @@
   min-height: 0;
   padding: 0px;
 }
-.tilt__n8FhI:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-  left: auto;
-  top: auto;
-}
 .diko:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-  align-self: center;
+  align-self: flex-start;
+  flex-shrink: 0;
   margin: 0px 0px 3px 20px;
 }
 .freeBox__aEtbN {
@@ -167,6 +161,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__aEtbN {
+    left: auto;
+    top: auto;
     margin: 0px;
   }
 }
@@ -290,15 +286,16 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  max-width: 100%;
   object-fit: cover;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   color: var(--token-U10-R6P8l);
   box-shadow: 0px 4px 16px 0px #00000033;
-  min-width: 0;
-  min-height: 0;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
   border-radius: 10px;
   padding: 0px;
   margin: 10px;

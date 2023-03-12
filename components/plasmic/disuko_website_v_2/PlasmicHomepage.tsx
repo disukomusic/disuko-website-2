@@ -37,9 +37,9 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: _De9lHvhQM/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
-import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import Diko from "../../Diko"; // plasmic-import: 26hRODzg9S/component
 import { TimelineWrapper } from "@plasmicpkgs/react-twitter-widgets"; // plasmic-import: x2j0abJR_t/codeComponent
+import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import Footer from "../../Footer"; // plasmic-import: phAOjgqEmd/component
 
 import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
@@ -241,164 +241,151 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.freeBox___996D
                           )}
                         >
-                          <Tilt
-                            className={classNames(
-                              "__wab_instance",
-                              sty.tilt__n8FhI
-                            )}
-                            glareEnable={false}
-                            tiltEnable={false}
-                            tiltMaxAngleX={10 as const}
-                            tiltMaxAngleY={10 as const}
-                            tiltReverse={true}
-                          >
-                            <Diko
-                              data-plasmic-name={"diko"}
-                              data-plasmic-override={overrides.diko}
-                              className={classNames("__wab_instance", sty.diko)}
-                            />
+                          <Diko
+                            data-plasmic-name={"diko"}
+                            data-plasmic-override={overrides.diko}
+                            className={classNames("__wab_instance", sty.diko)}
+                          />
 
-                            {true ? (
+                          {true ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__aEtbN
+                              )}
+                            >
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img__smDm6)}
+                                displayHeight={
+                                  hasVariant(
+                                    globalVariants,
+                                    "screen",
+                                    "mobileOnly"
+                                  )
+                                    ? ("auto" as const)
+                                    : ("286px" as const)
+                                }
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"100%" as const}
+                                loading={"lazy" as const}
+                                src={{
+                                  src: "/plasmic/disuko_website_v_2/images/_3132140498145789395868877228925067285650003Njpg.jpeg",
+                                  fullWidth: 1080,
+                                  fullHeight: 810,
+                                  aspectRatio: undefined
+                                }}
+                              />
+
                               <div
+                                data-plasmic-name={"greeting"}
+                                data-plasmic-override={overrides.greeting}
                                 className={classNames(
                                   projectcss.all,
-                                  sty.freeBox__aEtbN
+                                  projectcss.__wab_text,
+                                  sty.greeting
                                 )}
                               >
-                                <p.PlasmicImg
-                                  alt={""}
-                                  className={classNames(sty.img__smDm6)}
-                                  displayHeight={
-                                    hasVariant(
-                                      globalVariants,
-                                      "screen",
-                                      "mobileOnly"
-                                    )
-                                      ? ("auto" as const)
-                                      : ("286px" as const)
-                                  }
-                                  displayMaxHeight={"none" as const}
-                                  displayMaxWidth={"none" as const}
-                                  displayMinHeight={"0" as const}
-                                  displayMinWidth={"0" as const}
-                                  displayWidth={"100%" as const}
-                                  loading={"lazy" as const}
-                                  src={{
-                                    src: "/plasmic/disuko_website_v_2/images/_3132140498145789395868877228925067285650003Njpg.jpeg",
-                                    fullWidth: 1080,
-                                    fullHeight: 810,
-                                    aspectRatio: undefined
-                                  }}
-                                />
-
-                                <div
-                                  data-plasmic-name={"greeting"}
-                                  data-plasmic-override={overrides.greeting}
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.greeting
-                                  )}
-                                >
-                                  {"hi there!"}
-                                </div>
-
-                                <div
-                                  data-plasmic-name={"greeting2"}
-                                  data-plasmic-override={overrides.greeting2}
-                                  className={classNames(
-                                    projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.greeting2
-                                  )}
-                                >
-                                  {
-                                    "i'm disuko, i love all forms of digital media and aim to express myself through music, videography, and design. i hope you enjoy my work!"
-                                  }
-                                </div>
-
-                                <div
-                                  data-plasmic-name={"socials"}
-                                  data-plasmic-override={overrides.socials}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.socials
-                                  )}
-                                >
-                                  <p.PlasmicLink
-                                    data-plasmic-name={"youtube"}
-                                    data-plasmic-override={overrides.youtube}
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.youtube
-                                    )}
-                                    component={Link}
-                                    href={"https://youtube.com/disuko" as const}
-                                    platform={"nextjs"}
-                                    title={"youtube" as const}
-                                  >
-                                    <YoutubeSvgrepoComsvg2Icon
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.svg__uDscw
-                                      )}
-                                      role={"img"}
-                                    />
-                                  </p.PlasmicLink>
-
-                                  <p.PlasmicLink
-                                    data-plasmic-name={"instagram"}
-                                    data-plasmic-override={overrides.instagram}
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.instagram
-                                    )}
-                                    component={Link}
-                                    href={
-                                      "https://instagram.com/disukomusic" as const
-                                    }
-                                    platform={"nextjs"}
-                                    title={"instagram" as const}
-                                  >
-                                    <InstagramsvgIcon
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.svg__hsIOy
-                                      )}
-                                      role={"img"}
-                                    />
-                                  </p.PlasmicLink>
-
-                                  <p.PlasmicLink
-                                    data-plasmic-name={"twitter"}
-                                    data-plasmic-override={overrides.twitter}
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.twitter
-                                    )}
-                                    component={Link}
-                                    href={
-                                      "https://twitter.com/disukomusic" as const
-                                    }
-                                    platform={"nextjs"}
-                                    title={"twitter" as const}
-                                  >
-                                    <TwittersvgIcon
-                                      className={classNames(
-                                        projectcss.all,
-                                        sty.svg___22AmV
-                                      )}
-                                      role={"img"}
-                                    />
-                                  </p.PlasmicLink>
-                                </div>
+                                {"hi there!"}
                               </div>
-                            ) : null}
-                          </Tilt>
 
+                              <div
+                                data-plasmic-name={"greeting2"}
+                                data-plasmic-override={overrides.greeting2}
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.greeting2
+                                )}
+                              >
+                                {
+                                  "i'm disuko, i love all forms of digital media and aim to express myself through music, videography, and design. i hope you enjoy my work!"
+                                }
+                              </div>
+
+                              <div
+                                data-plasmic-name={"socials"}
+                                data-plasmic-override={overrides.socials}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.socials
+                                )}
+                              >
+                                <p.PlasmicLink
+                                  data-plasmic-name={"youtube"}
+                                  data-plasmic-override={overrides.youtube}
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    sty.youtube
+                                  )}
+                                  component={Link}
+                                  href={"https://youtube.com/disuko" as const}
+                                  platform={"nextjs"}
+                                  title={"youtube" as const}
+                                >
+                                  <YoutubeSvgrepoComsvg2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__uDscw
+                                    )}
+                                    role={"img"}
+                                  />
+                                </p.PlasmicLink>
+
+                                <p.PlasmicLink
+                                  data-plasmic-name={"instagram"}
+                                  data-plasmic-override={overrides.instagram}
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    sty.instagram
+                                  )}
+                                  component={Link}
+                                  href={
+                                    "https://instagram.com/disukomusic" as const
+                                  }
+                                  platform={"nextjs"}
+                                  title={"instagram" as const}
+                                >
+                                  <InstagramsvgIcon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__hsIOy
+                                    )}
+                                    role={"img"}
+                                  />
+                                </p.PlasmicLink>
+
+                                <p.PlasmicLink
+                                  data-plasmic-name={"twitter"}
+                                  data-plasmic-override={overrides.twitter}
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.a,
+                                    sty.twitter
+                                  )}
+                                  component={Link}
+                                  href={
+                                    "https://twitter.com/disukomusic" as const
+                                  }
+                                  platform={"nextjs"}
+                                  title={"twitter" as const}
+                                >
+                                  <TwittersvgIcon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___22AmV
+                                    )}
+                                    role={"img"}
+                                  />
+                                </p.PlasmicLink>
+                              </div>
+                            </div>
+                          ) : null}
                           {(
                             hasVariant(globalVariants, "screen", "mobileOnly")
                               ? true
