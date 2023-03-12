@@ -38,6 +38,7 @@ import {
 import Navbar from "../../Navbar"; // plasmic-import: _De9lHvhQM/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
+import Diko from "../../Diko"; // plasmic-import: 26hRODzg9S/component
 import { TimelineWrapper } from "@plasmicpkgs/react-twitter-widgets"; // plasmic-import: x2j0abJR_t/codeComponent
 import Footer from "../../Footer"; // plasmic-import: phAOjgqEmd/component
 
@@ -66,6 +67,7 @@ export type PlasmicHomepage__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   reveal?: p.Flex<typeof Reveal>;
   columns?: p.Flex<"div">;
+  diko?: p.Flex<typeof Diko>;
   greeting?: p.Flex<"div">;
   greeting2?: p.Flex<"div">;
   socials?: p.Flex<"div">;
@@ -250,6 +252,12 @@ function PlasmicHomepage__RenderFunc(props: {
                             tiltMaxAngleY={10 as const}
                             tiltReverse={true}
                           >
+                            <Diko
+                              data-plasmic-name={"diko"}
+                              data-plasmic-override={overrides.diko}
+                              className={classNames("__wab_instance", sty.diko)}
+                            />
+
                             {true ? (
                               <div
                                 className={classNames(
@@ -1422,6 +1430,7 @@ const PlasmicDescendants = {
     "navbar",
     "reveal",
     "columns",
+    "diko",
     "greeting",
     "greeting2",
     "socials",
@@ -1453,6 +1462,7 @@ const PlasmicDescendants = {
   reveal: [
     "reveal",
     "columns",
+    "diko",
     "greeting",
     "greeting2",
     "socials",
@@ -1479,6 +1489,7 @@ const PlasmicDescendants = {
   ],
   columns: [
     "columns",
+    "diko",
     "greeting",
     "greeting2",
     "socials",
@@ -1493,6 +1504,7 @@ const PlasmicDescendants = {
     "greeting7",
     "greeting8"
   ],
+  diko: ["diko"],
   greeting: ["greeting"],
   greeting2: ["greeting2"],
   socials: ["socials", "youtube", "instagram", "twitter"],
@@ -1528,6 +1540,7 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   reveal: typeof Reveal;
   columns: "div";
+  diko: typeof Diko;
   greeting: "div";
   greeting2: "div";
   socials: "div";
@@ -1620,6 +1633,7 @@ export const PlasmicHomepage = Object.assign(
     navbar: makeNodeComponent("navbar"),
     reveal: makeNodeComponent("reveal"),
     columns: makeNodeComponent("columns"),
+    diko: makeNodeComponent("diko"),
     greeting: makeNodeComponent("greeting"),
     greeting2: makeNodeComponent("greeting2"),
     socials: makeNodeComponent("socials"),

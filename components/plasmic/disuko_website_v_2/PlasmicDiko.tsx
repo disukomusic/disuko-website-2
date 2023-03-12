@@ -51,7 +51,8 @@ type ArgPropType = keyof PlasmicDiko__ArgsType;
 export const PlasmicDiko__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicDiko__OverridesType = {
-  root?: p.Flex<typeof p.PlasmicImg>;
+  root?: p.Flex<"a"> & Partial<LinkProps>;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultDikoProps {
@@ -97,44 +98,57 @@ function PlasmicDiko__RenderFunc(props: {
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
-    <p.PlasmicImg
+    <p.PlasmicLink
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      alt={""}
       className={classNames(
+        projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root
       )}
-      displayHeight={"auto" as const}
-      displayMaxHeight={"none" as const}
-      displayMaxWidth={"10%" as const}
-      displayMinHeight={"0" as const}
-      displayMinWidth={"0" as const}
-      displayWidth={"auto" as const}
-      loading={"lazy" as const}
-      src={{
-        src: "/plasmic/disuko_website_v_2/images/disukoPandaPixelpng.png",
-        fullWidth: 480,
-        fullHeight: 480,
-        aspectRatio: undefined
-      }}
-    />
+      component={Link}
+      href={`/retro`}
+      platform={"nextjs"}
+    >
+      <p.PlasmicImg
+        data-plasmic-name={"img"}
+        data-plasmic-override={overrides.img}
+        alt={""}
+        className={classNames(sty.img)}
+        displayHeight={"100%" as const}
+        displayMaxHeight={"none" as const}
+        displayMaxWidth={"none" as const}
+        displayMinHeight={"0" as const}
+        displayMinWidth={"0" as const}
+        displayWidth={"100%" as const}
+        loading={"lazy" as const}
+        src={{
+          src: "/plasmic/disuko_website_v_2/images/disukoPandaPixelpng.png",
+          fullWidth: 480,
+          fullHeight: 480,
+          aspectRatio: undefined
+        }}
+      />
+    </p.PlasmicLink>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "img"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: typeof p.PlasmicImg;
+  root: "a";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -198,6 +212,7 @@ export const PlasmicDiko = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicDiko
     internalVariantProps: PlasmicDiko__VariantProps,

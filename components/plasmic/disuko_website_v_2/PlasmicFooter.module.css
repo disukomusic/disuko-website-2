@@ -99,12 +99,20 @@
   min-width: 0;
   padding: 8px;
 }
-.img__jvX8Z {
+.disuko {
   position: relative;
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.img__jvX8Z {
   object-fit: contain;
   height: 40%;
-  width: 20%;
-  border-radius: 100px;
+  width: 100%;
+  min-width: 0;
+  border-radius: 0px;
 }
 .img__jvX8Z > picture > img {
   object-fit: contain;
@@ -144,7 +152,7 @@
   font-family: "Keqima";
   min-width: 0;
 }
-.link {
+.link___0O7As {
   position: relative;
   display: flex;
   align-items: center;

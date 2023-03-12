@@ -55,8 +55,8 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 export type PlasmicFooter__OverridesType = {
   root?: p.Flex<"div">;
   columns?: p.Flex<"div">;
+  disuko?: p.Flex<"a"> & Partial<LinkProps>;
   freeBox?: p.Flex<"div">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultFooterProps {
@@ -128,23 +128,33 @@ function PlasmicFooter__RenderFunc(props: {
         className={classNames(projectcss.all, sty.columns)}
       >
         <div className={classNames(projectcss.all, sty.column__laFb)}>
-          <p.PlasmicImg
-            alt={""}
-            className={classNames(sty.img__jvX8Z)}
-            displayHeight={"40%" as const}
-            displayMaxHeight={"none" as const}
-            displayMaxWidth={"none" as const}
-            displayMinHeight={"0" as const}
-            displayMinWidth={"0" as const}
-            displayWidth={"20%" as const}
-            loading={"lazy" as const}
-            src={{
-              src: "/plasmic/disuko_website_v_2/images/logo128X128Png.png",
-              fullWidth: 128,
-              fullHeight: 128,
-              aspectRatio: undefined
-            }}
-          />
+          <p.PlasmicLink
+            data-plasmic-name={"disuko"}
+            data-plasmic-override={overrides.disuko}
+            className={classNames(projectcss.all, projectcss.a, sty.disuko)}
+            component={Link}
+            href={`/`}
+            platform={"nextjs"}
+            target={"_blank" as const}
+          >
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__jvX8Z)}
+              displayHeight={"40%" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"none" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"100%" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/disuko_website_v_2/images/logo128X128Png.png",
+                fullWidth: 128,
+                fullHeight: 128,
+                aspectRatio: undefined
+              }}
+            />
+          </p.PlasmicLink>
         </div>
 
         <div className={classNames(projectcss.all, sty.column__taxvx)}>
@@ -166,15 +176,50 @@ function PlasmicFooter__RenderFunc(props: {
                     className={"plasmic_default__all plasmic_default__span"}
                     style={{ fontWeight: 700 }}
                   >
-                    {"website © disuko & Red Panda Media 2022"}
+                    {"website © disuko & "}
+                  </span>
+                  <React.Fragment>{""}</React.Fragment>
+                  {
+                    <p.PlasmicLink
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        projectcss.plasmic_default__inline,
+                        sty.link__vlfhD
+                      )}
+                      component={Link}
+                      href={"https://redpandamedia.net" as const}
+                      platform={"nextjs"}
+                    >
+                      <React.Fragment>
+                        <span
+                          className={
+                            "plasmic_default__all plasmic_default__span"
+                          }
+                          style={{ fontWeight: 700 }}
+                        >
+                          {"Red Panda Studios"}
+                        </span>
+                      </React.Fragment>
+                    </p.PlasmicLink>
+                  }
+                  <React.Fragment>{""}</React.Fragment>
+                  <span
+                    className={"plasmic_default__all plasmic_default__span"}
+                    style={{ fontWeight: 700 }}
+                  >
+                    {" 2023"}
                   </span>
                 </React.Fragment>
               </div>
 
               <p.PlasmicLink
-                data-plasmic-name={"link"}
-                data-plasmic-override={overrides.link}
-                className={classNames(projectcss.all, projectcss.a, sty.link)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___0O7As
+                )}
                 component={Link}
                 href={"https://www.ohhey.gay/gay-gives" as const}
                 platform={"nextjs"}
@@ -214,8 +259,35 @@ function PlasmicFooter__RenderFunc(props: {
                 className={"plasmic_default__all plasmic_default__span"}
                 style={{ fontWeight: 700 }}
               >
-                {"icons from tabler"}
+                {"icons from "}
               </span>
+              <React.Fragment>{""}</React.Fragment>
+              {
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    projectcss.plasmic_default__inline,
+                    sty.link___8Ukcv
+                  )}
+                  component={Link}
+                  href={
+                    "https://github.com/konradkalemba/tabler-icons-react" as const
+                  }
+                  platform={"nextjs"}
+                >
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"tabler"}
+                    </span>
+                  </React.Fragment>
+                </p.PlasmicLink>
+              }
+              <React.Fragment>{""}</React.Fragment>
             </React.Fragment>
           </div>
         </div>
@@ -225,10 +297,10 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "freeBox", "link"],
-  columns: ["columns", "freeBox", "link"],
-  freeBox: ["freeBox", "link"],
-  link: ["link"]
+  root: ["root", "columns", "disuko", "freeBox"],
+  columns: ["columns", "disuko", "freeBox"],
+  disuko: ["disuko"],
+  freeBox: ["freeBox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -236,8 +308,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   columns: "div";
+  disuko: "a";
   freeBox: "div";
-  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -302,8 +374,8 @@ export const PlasmicFooter = Object.assign(
   {
     // Helper components rendering sub-elements
     columns: makeNodeComponent("columns"),
+    disuko: makeNodeComponent("disuko"),
     freeBox: makeNodeComponent("freeBox"),
-    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicFooter
     internalVariantProps: PlasmicFooter__VariantProps,
