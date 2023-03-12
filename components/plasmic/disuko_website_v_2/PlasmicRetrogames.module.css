@@ -116,6 +116,7 @@
 .retroDisuko:global(.__wab_instance) {
   align-self: flex-start;
   flex-shrink: 0;
+  display: none;
   margin: 0px 0px 10px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
