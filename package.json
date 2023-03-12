@@ -20,6 +20,7 @@
     "@plasmicpkgs/plasmic-nav": "^0.0.63",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.93",
     "@plasmicpkgs/react-parallax-tilt": "^0.0.91",
+    "@plasmicpkgs/react-scroll-parallax": "^0.0.115",
     "@plasmicpkgs/react-twitter-widgets": "^0.0.90",
     "@plasmicpkgs/react-youtube": "^7.13.96",
     "@types/node": "18.11.18",

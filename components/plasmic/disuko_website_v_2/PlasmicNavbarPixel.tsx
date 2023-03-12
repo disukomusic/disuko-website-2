@@ -36,6 +36,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -113,31 +114,42 @@ function PlasmicNavbarPixel__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       brand={
-        <p.PlasmicLink
-          data-plasmic-name={"link"}
-          data-plasmic-override={overrides.link}
-          className={classNames(projectcss.all, projectcss.a, sty.link)}
-          component={Link}
-          href={`/`}
-          platform={"nextjs"}
+        <Reveal
+          cascade={false}
+          className={classNames("__wab_instance", sty.reveal__niV5K)}
+          damping={1 as const}
+          direction={"down" as const}
+          duration={1000 as const}
+          effect={"bounce" as const}
+          reverse={false}
+          triggerOnce={true}
         >
-          <p.PlasmicImg
-            alt={""}
-            className={classNames(sty.img__rUFf)}
-            displayHeight={"40px" as const}
-            displayMaxHeight={"none" as const}
-            displayMaxWidth={"none" as const}
-            displayMinHeight={"0" as const}
-            displayMinWidth={"0" as const}
-            displayWidth={"auto" as const}
-            src={{
-              src: "/plasmic/disuko_website_v_2/images/disukoPixelpng.png",
-              fullWidth: 640,
-              fullHeight: 160,
-              aspectRatio: undefined
-            }}
-          />
-        </p.PlasmicLink>
+          <p.PlasmicLink
+            data-plasmic-name={"link"}
+            data-plasmic-override={overrides.link}
+            className={classNames(projectcss.all, projectcss.a, sty.link)}
+            component={Link}
+            href={`/`}
+            platform={"nextjs"}
+          >
+            <p.PlasmicImg
+              alt={""}
+              className={classNames(sty.img__rUFf)}
+              displayHeight={"40px" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"none" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"auto" as const}
+              src={{
+                src: "/plasmic/disuko_website_v_2/images/disukoPixelpng.png",
+                fullWidth: 640,
+                fullHeight: 160,
+                aspectRatio: undefined
+              }}
+            />
+          </p.PlasmicLink>
+        </Reveal>
       }
       className={classNames(
         "__wab_instance",
@@ -156,75 +168,25 @@ function PlasmicNavbarPixel__RenderFunc(props: {
       itemsGap={8 as const}
       menuItems={
         <React.Fragment>
-          <p.PlasmicLink
-            data-plasmic-name={"home"}
-            data-plasmic-override={overrides.home}
-            className={classNames(projectcss.all, projectcss.a, sty.home)}
-            component={Link}
-            href={`/`}
-            platform={"nextjs"}
-            title={"home" as const}
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal__cVyy)}
+            delay={100 as const}
+            direction={"down" as const}
+            effect={"bounce" as const}
+            triggerOnce={true}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__bfiHu)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"30%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/disuko_website_v_2/images/homepng5.png",
-                fullWidth: 160,
-                fullHeight: 150,
-                aspectRatio: undefined
-              }}
-            />
-          </p.PlasmicLink>
-
-          <p.PlasmicLink
-            data-plasmic-name={"music"}
-            data-plasmic-override={overrides.music}
-            className={classNames(projectcss.all, projectcss.a, sty.music)}
-            component={Link}
-            href={`/music`}
-            platform={"nextjs"}
-            title={"music" as const}
-          >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__nzbvf)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"30%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/disuko_website_v_2/images/musicpng3.png",
-                fullWidth: 160,
-                fullHeight: 150,
-                aspectRatio: undefined
-              }}
-            />
-          </p.PlasmicLink>
-
-          {true ? (
             <p.PlasmicLink
-              data-plasmic-name={"links"}
-              data-plasmic-override={overrides.links}
-              className={classNames(projectcss.all, projectcss.a, sty.links)}
+              data-plasmic-name={"home"}
+              data-plasmic-override={overrides.home}
+              className={classNames(projectcss.all, projectcss.a, sty.home)}
               component={Link}
-              href={`/links`}
+              href={`/`}
               platform={"nextjs"}
-              title={"links" as const}
+              title={"home" as const}
             >
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__xe5Ck)}
+                className={classNames(sty.img__bfiHu)}
                 displayHeight={"auto" as const}
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"30%" as const}
@@ -233,70 +195,164 @@ function PlasmicNavbarPixel__RenderFunc(props: {
                 displayWidth={"auto" as const}
                 loading={"lazy" as const}
                 src={{
-                  src: "/plasmic/disuko_website_v_2/images/linkspng2.png",
+                  src: "/plasmic/disuko_website_v_2/images/homepng5.png",
                   fullWidth: 160,
-                  fullHeight: 160,
+                  fullHeight: 150,
                   aspectRatio: undefined
                 }}
               />
             </p.PlasmicLink>
-          ) : null}
+          </Reveal>
 
-          <p.PlasmicLink
-            data-plasmic-name={"portfolio"}
-            data-plasmic-override={overrides.portfolio}
-            className={classNames(projectcss.all, projectcss.a, sty.portfolio)}
-            component={Link}
-            href={`/portfolio`}
-            platform={"nextjs"}
-            title={"portfolio" as const}
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal__nnzag)}
+            delay={200 as const}
+            direction={"down" as const}
+            effect={"bounce" as const}
+            triggerOnce={true}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__qi9Zc)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"30%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/disuko_website_v_2/images/portfofliopng2.png",
-                fullWidth: 160,
-                fullHeight: 150,
-                aspectRatio: undefined
-              }}
-            />
-          </p.PlasmicLink>
+            <p.PlasmicLink
+              data-plasmic-name={"music"}
+              data-plasmic-override={overrides.music}
+              className={classNames(projectcss.all, projectcss.a, sty.music)}
+              component={Link}
+              href={`/music`}
+              platform={"nextjs"}
+              title={"music" as const}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__nzbvf)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"30%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/disuko_website_v_2/images/musicpng3.png",
+                  fullWidth: 160,
+                  fullHeight: 150,
+                  aspectRatio: undefined
+                }}
+              />
+            </p.PlasmicLink>
+          </Reveal>
 
-          <p.PlasmicLink
-            data-plasmic-name={"merch"}
-            data-plasmic-override={overrides.merch}
-            className={classNames(projectcss.all, projectcss.a, sty.merch)}
-            component={Link}
-            href={"https://merch.disuko.gay" as const}
-            platform={"nextjs"}
-            title={"merch" as const}
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal__hlD7M)}
+            delay={300 as const}
+            direction={"down" as const}
+            effect={"bounce" as const}
+            triggerOnce={true}
           >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__uzAa6)}
-              displayHeight={"auto" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"30%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"auto" as const}
-              loading={"lazy" as const}
-              src={{
-                src: "/plasmic/disuko_website_v_2/images/shirtpng3.png",
-                fullWidth: 160,
-                fullHeight: 130,
-                aspectRatio: undefined
-              }}
-            />
-          </p.PlasmicLink>
+            {true ? (
+              <p.PlasmicLink
+                data-plasmic-name={"links"}
+                data-plasmic-override={overrides.links}
+                className={classNames(projectcss.all, projectcss.a, sty.links)}
+                component={Link}
+                href={`/links`}
+                platform={"nextjs"}
+                title={"links" as const}
+              >
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__xe5Ck)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"30%" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/disuko_website_v_2/images/linkspng2.png",
+                    fullWidth: 160,
+                    fullHeight: 160,
+                    aspectRatio: undefined
+                  }}
+                />
+              </p.PlasmicLink>
+            ) : null}
+          </Reveal>
+
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal__bRnDj)}
+            delay={400 as const}
+            direction={"down" as const}
+            effect={"bounce" as const}
+            triggerOnce={true}
+          >
+            <p.PlasmicLink
+              data-plasmic-name={"portfolio"}
+              data-plasmic-override={overrides.portfolio}
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.portfolio
+              )}
+              component={Link}
+              href={`/portfolio`}
+              platform={"nextjs"}
+              title={"portfolio" as const}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__qi9Zc)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"30%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/disuko_website_v_2/images/portfofliopng2.png",
+                  fullWidth: 160,
+                  fullHeight: 150,
+                  aspectRatio: undefined
+                }}
+              />
+            </p.PlasmicLink>
+          </Reveal>
+
+          <Reveal
+            className={classNames("__wab_instance", sty.reveal___3QXt)}
+            delay={500 as const}
+            direction={"down" as const}
+            effect={"bounce" as const}
+            triggerOnce={true}
+          >
+            <p.PlasmicLink
+              data-plasmic-name={"merch"}
+              data-plasmic-override={overrides.merch}
+              className={classNames(projectcss.all, projectcss.a, sty.merch)}
+              component={Link}
+              href={"https://merch.disuko.gay" as const}
+              platform={"nextjs"}
+              title={"merch" as const}
+            >
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__uzAa6)}
+                displayHeight={"auto" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"30%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"auto" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: "/plasmic/disuko_website_v_2/images/shirtpng3.png",
+                  fullWidth: 160,
+                  fullHeight: 130,
+                  aspectRatio: undefined
+                }}
+              />
+            </p.PlasmicLink>
+          </Reveal>
         </React.Fragment>
       }
       openButton={

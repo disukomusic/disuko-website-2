@@ -6,18 +6,26 @@
 import * as React from "react";
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
 import { CommerceProviderComponent } from "@plasmicpkgs/commerce-shopify"; // plasmic-import: jKXfoEXfU9R/codeComponent
+import { ParallaxProviderWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: L6MfauX2Cw/codeComponent
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   commerceProviderComponentProps?: Partial<
     Omit<React.ComponentProps<typeof CommerceProviderComponent>, "children">
   >;
+  parallaxProviderWrapperProps?: Partial<
+    Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
+  >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, commerceProviderComponentProps } = props;
+  const {
+    children,
+    commerceProviderComponentProps,
+    parallaxProviderWrapperProps
+  } = props;
 
   return (
     <CommerceProviderComponent
@@ -35,7 +43,17 @@ export default function GlobalContextsProvider(
           : ("next-js-store.myshopify.com" as const)
       }
     >
-      {children}
+      <ParallaxProviderWrapper
+        {...parallaxProviderWrapperProps}
+        scrollAxis={
+          parallaxProviderWrapperProps &&
+          "scrollAxis" in parallaxProviderWrapperProps
+            ? parallaxProviderWrapperProps.scrollAxis!
+            : ("vertical" as const)
+        }
+      >
+        {children}
+      </ParallaxProviderWrapper>
     </CommerceProviderComponent>
   );
 }

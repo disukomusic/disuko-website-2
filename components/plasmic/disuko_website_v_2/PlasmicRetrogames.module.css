@@ -7,24 +7,40 @@
   justify-content: flex-start;
   align-items: center;
   background: url("/plasmic/disuko_website_v_2/images/backgroundTilespng2.png") 0% 0% / 25px 25px;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  transition-property: all;
+  transition-duration: 1s;
   min-width: 0;
   min-height: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
 .navbarPixel:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
   position: relative;
   align-self: flex-start;
 }
+.scrollParallax:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  background: none;
+  left: auto;
+  top: auto;
+}
 .columns {
   display: flex;
   position: relative;
-  width: auto;
-  height: auto;
   align-items: stretch;
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
   flex-grow: 0;
+  backdrop-filter: blur(0px);
+  align-self: auto;
+  width: auto;
+  height: auto;
+  -webkit-backdrop-filter: blur(0px);
   padding: 0px 8px 8px;
   margin: 0px;
 }
@@ -97,18 +113,22 @@
   min-width: 0;
   padding: 10px;
 }
-.img___013R {
-  object-fit: cover;
-  max-width: 10%;
+.diko:global(.__wab_instance) {
   align-self: flex-start;
-  width: 100%;
-  min-width: 0;
 }
-.img___013R > picture > img {
-  object-fit: cover;
-}
-.img___013R > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+@media (min-width: 0px) and (max-width: 768px) {
+  .diko:global(.__wab_instance) {
+    position: relative;
+    left: auto;
+    top: auto;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 0;
+    min-height: 0;
+    display: inline-block;
+  }
 }
 .freeBox__jeJgv {
   display: flex;

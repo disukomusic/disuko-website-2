@@ -1,0 +1,26 @@
+.root {
+  object-fit: cover;
+  max-width: 10%;
+  width: auto;
+  transition-property: transform;
+  transition-duration: 0.1s;
+  transform: perspective(0px) translateX(0px) translateY(45px) translateZ(0px);
+  transform-origin: 0% 0%;
+  backface-visibility: hidden;
+  perspective: 0px;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  display: inline-inline-block !important;
+  -webkit-transition-property: transform;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.1s;
+}
+.root > picture > img {
+  object-fit: cover;
+}
+.root > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}
+.root:hover {
+  transform: perspective(0px) translateX(0px) translateY(10px) translateZ(0px);
+}
