@@ -113,13 +113,13 @@
   min-width: 0;
   padding: 10px;
 }
-.diko:global(.__wab_instance) {
+.retroDisuko:global(.__wab_instance) {
   align-self: flex-start;
   flex-shrink: 0;
   margin: 0px 0px 10px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .diko:global(.__wab_instance) {
+  .retroDisuko:global(.__wab_instance) {
     position: relative;
     left: auto;
     top: auto;

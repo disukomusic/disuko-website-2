@@ -712,14 +712,14 @@
         },
         {
           "id": "26hRODzg9S",
-          "name": "Diko",
+          "name": "RetroDisuko",
           "type": "managed",
           "projectId": "bsHvoheJaXyaeWhnCxRakT",
-          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicDiko.tsx",
+          "renderModuleFilePath": "plasmic/disuko_website_v_2/PlasmicRetroDisuko.tsx",
           "importSpec": {
-            "modulePath": "Diko.tsx"
+            "modulePath": "RetroDisuko.tsx"
           },
-          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicDiko.module.css",
+          "cssFilePath": "plasmic/disuko_website_v_2/PlasmicRetroDisuko.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

@@ -37,7 +37,7 @@ import {
 } from "@plasmicapp/react-web";
 import NavbarPixel from "../../NavbarPixel"; // plasmic-import: i-jxMljO8wt/component
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
-import Diko from "../../Diko"; // plasmic-import: 26hRODzg9S/component
+import RetroDisuko from "../../RetroDisuko"; // plasmic-import: 26hRODzg9S/component
 import FooterPixel from "../../FooterPixel"; // plasmic-import: EtLrAaCqNS/component
 
 import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
@@ -61,7 +61,7 @@ export type PlasmicRetrogames__OverridesType = {
   navbarPixel?: p.Flex<typeof NavbarPixel>;
   scrollParallax?: p.Flex<typeof ParallaxWrapper>;
   columns?: p.Flex<"div">;
-  diko?: p.Flex<typeof Diko>;
+  retroDisuko?: p.Flex<typeof RetroDisuko>;
   footerPixel?: p.Flex<typeof FooterPixel>;
 };
 
@@ -224,10 +224,10 @@ function PlasmicRetrogames__RenderFunc(props: {
                     ? true
                     : true
                 ) ? (
-                  <Diko
-                    data-plasmic-name={"diko"}
-                    data-plasmic-override={overrides.diko}
-                    className={classNames("__wab_instance", sty.diko)}
+                  <RetroDisuko
+                    data-plasmic-name={"retroDisuko"}
+                    data-plasmic-override={overrides.retroDisuko}
+                    className={classNames("__wab_instance", sty.retroDisuko)}
                   />
                 ) : null}
                 {true ? (
@@ -828,13 +828,13 @@ const PlasmicDescendants = {
     "navbarPixel",
     "scrollParallax",
     "columns",
-    "diko",
+    "retroDisuko",
     "footerPixel"
   ],
   navbarPixel: ["navbarPixel"],
-  scrollParallax: ["scrollParallax", "columns", "diko"],
-  columns: ["columns", "diko"],
-  diko: ["diko"],
+  scrollParallax: ["scrollParallax", "columns", "retroDisuko"],
+  columns: ["columns", "retroDisuko"],
+  retroDisuko: ["retroDisuko"],
   footerPixel: ["footerPixel"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -845,7 +845,7 @@ type NodeDefaultElementType = {
   navbarPixel: typeof NavbarPixel;
   scrollParallax: typeof ParallaxWrapper;
   columns: "div";
-  diko: typeof Diko;
+  retroDisuko: typeof RetroDisuko;
   footerPixel: typeof FooterPixel;
 };
 
@@ -913,7 +913,7 @@ export const PlasmicRetrogames = Object.assign(
     navbarPixel: makeNodeComponent("navbarPixel"),
     scrollParallax: makeNodeComponent("scrollParallax"),
     columns: makeNodeComponent("columns"),
-    diko: makeNodeComponent("diko"),
+    retroDisuko: makeNodeComponent("retroDisuko"),
     footerPixel: makeNodeComponent("footerPixel"),
 
     // Metadata about props expected for PlasmicRetrogames
