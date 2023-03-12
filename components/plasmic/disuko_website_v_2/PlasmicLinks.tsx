@@ -346,7 +346,9 @@ function PlasmicLinks__RenderFunc(props: {
               </p.PlasmicLink>
             </Tilt>
 
-            {true ? (
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
               <Tilt
                 className={classNames("__wab_instance", sty.tilt__wfpGx)}
                 glareEnable={false}

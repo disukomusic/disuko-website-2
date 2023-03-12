@@ -48,6 +48,11 @@
 .main > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 10px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .main {
+    padding: 0px;
+  }
+}
 .img {
   position: relative;
   object-fit: cover;
@@ -440,6 +445,12 @@
   width: 100%;
   min-width: 0;
   display: none;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .tilt__wfpGx:global(.__wab_instance) {
+    margin-top: calc(10px + 10px) !important;
+    display: none;
+  }
 }
 .link__tU0WY {
   display: grid;

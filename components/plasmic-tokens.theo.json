@@ -91,6 +91,26 @@
       }
     },
     {
+      "name": "Pixel PInk",
+      "type": "color",
+      "value": "#F1CCF7",
+      "category": "color",
+      "meta": {
+        "projectId": "bsHvoheJaXyaeWhnCxRakT",
+        "id": "t48rNnhOG"
+      }
+    },
+    {
+      "name": "Pixel PInk 2",
+      "type": "color",
+      "value": "#93539F",
+      "category": "color",
+      "meta": {
+        "projectId": "bsHvoheJaXyaeWhnCxRakT",
+        "id": "hTIw6_yzG"
+      }
+    },
+    {
       "name": "SHadow",
       "type": "color",
       "value": "#00000040",

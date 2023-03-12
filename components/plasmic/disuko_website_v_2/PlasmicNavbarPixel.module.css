@@ -13,12 +13,20 @@
   box-shadow: 0px 4px 16px 0px #00000033;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  align-content: center;
   min-width: 0;
   -webkit-backdrop-filter: blur(0px);
   -webkit-transition-property: all;
   -webkit-transition-duration: 1s;
   padding: 16px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root:global(.__wab_instance) {
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 .reveal__niV5K:global(.__wab_instance) {
   max-width: 100%;
@@ -41,6 +49,8 @@
   .link {
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
   }
 }
 .img__rUFf {
@@ -57,7 +67,7 @@
 .svg__xeGS {
   object-fit: cover;
   max-width: 100%;
-  color: var(--token-4g29keipI);
+  color: var(--token-hTIw6_yzG);
   width: 33px;
   height: 33px;
 }
@@ -65,7 +75,7 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  color: var(--token-4g29keipI);
+  color: var(--token-t48rNnhOG);
   width: 33px;
   height: 33px;
 }
@@ -85,6 +95,10 @@
   .home {
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 0;
   }
 }
 .img__bfiHu {
@@ -97,6 +111,33 @@
 }
 .img__bfiHu > :global(.__wab_img-spacer) > img {
   object-fit: contain;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__bfiHu {
+    max-width: 5%;
+    position: relative;
+    left: auto;
+    top: auto;
+    display: none !important;
+  }
+}
+.text__eEfPs {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-t48rNnhOG);
+  font-family: "Press Start 2P";
+  background: #f2cbf8;
+  display: none;
+  border-radius: 0px;
+  padding: 5px;
+  border: 4px solid var(--token-t48rNnhOG);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__eEfPs {
+    display: block;
+  }
 }
 .reveal__nnzag:global(.__wab_instance) {
   max-width: 100%;
@@ -125,6 +166,29 @@
 .img__nzbvf > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__nzbvf {
+    max-width: 5%;
+    display: none !important;
+  }
+}
+.text__nn2R9 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-t48rNnhOG);
+  font-family: "Press Start 2P";
+  background: #f2cbf8;
+  border-radius: 0px;
+  padding: 5px;
+  border: 4px solid var(--token-t48rNnhOG);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__nn2R9 {
+    display: block;
+  }
+}
 .reveal__hlD7M:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
@@ -151,6 +215,29 @@
 }
 .img__xe5Ck > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__xe5Ck {
+    max-width: 5%;
+    display: none !important;
+  }
+}
+.text__hMtC {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-t48rNnhOG);
+  font-family: "Press Start 2P";
+  background: #f2cbf8;
+  border-radius: 0px;
+  padding: 5px;
+  border: 4px solid var(--token-t48rNnhOG);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__hMtC {
+    display: block;
+  }
 }
 .reveal__bRnDj:global(.__wab_instance) {
   max-width: 100%;
@@ -180,6 +267,29 @@
 .img__qi9Zc > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__qi9Zc {
+    max-width: 5%;
+    display: none !important;
+  }
+}
+.text__pdkl5 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-t48rNnhOG);
+  font-family: "Press Start 2P";
+  background: #f2cbf8;
+  border-radius: 0px;
+  padding: 5px;
+  border: 4px solid var(--token-t48rNnhOG);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__pdkl5 {
+    display: block;
+  }
+}
 .reveal___3QXt:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
@@ -206,4 +316,27 @@
 }
 .img__uzAa6 > :global(.__wab_img-spacer) > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__uzAa6 {
+    max-width: 5%;
+    display: none !important;
+  }
+}
+.text__uR06O {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-t48rNnhOG);
+  font-family: "Press Start 2P";
+  background: #f2cbf8;
+  border-radius: 0px;
+  padding: 5px;
+  border: 4px solid var(--token-t48rNnhOG);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__uR06O {
+    display: block;
+  }
 }

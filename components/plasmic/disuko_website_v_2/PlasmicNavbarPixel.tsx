@@ -38,6 +38,8 @@ import {
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 
+import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_disuko_website_v_2.module.css"; // plasmic-import: bsHvoheJaXyaeWhnCxRakT/projectcss
@@ -107,6 +109,10 @@ function PlasmicNavbarPixel__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantswajuQ4R1DeAga()
+  });
+
   return (
     <NavigationBar
       data-plasmic-name={"root"}
@@ -165,7 +171,14 @@ function PlasmicNavbarPixel__RenderFunc(props: {
           role={"img"}
         />
       }
-      itemsGap={8 as const}
+      forceOpenMenu={
+        hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+      }
+      itemsGap={
+        hasVariant(globalVariants, "screen", "mobileOnly")
+          ? (8 as const)
+          : (8 as const)
+      }
       menuItems={
         <React.Fragment>
           <Reveal
@@ -184,23 +197,44 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               platform={"nextjs"}
               title={"home" as const}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__bfiHu)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"30%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/disuko_website_v_2/images/homepng5.png",
-                  fullWidth: 160,
-                  fullHeight: 150,
-                  aspectRatio: undefined
-                }}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__bfiHu)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("5%" as const)
+                      : ("30%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/disuko_website_v_2/images/homepng5.png",
+                    fullWidth: 160,
+                    fullHeight: 150,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__eEfPs
+                  )}
+                >
+                  {"Home"}
+                </div>
+              ) : null}
             </p.PlasmicLink>
           </Reveal>
 
@@ -220,23 +254,46 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               platform={"nextjs"}
               title={"music" as const}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__nzbvf)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"30%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/disuko_website_v_2/images/musicpng3.png",
-                  fullWidth: 160,
-                  fullHeight: 150,
-                  aspectRatio: undefined
-                }}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__nzbvf)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("5%" as const)
+                      : ("30%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/disuko_website_v_2/images/musicpng3.png",
+                    fullWidth: 160,
+                    fullHeight: 150,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__nn2R9
+                  )}
+                >
+                  {"Music"}
+                </div>
+              ) : null}
             </p.PlasmicLink>
           </Reveal>
 
@@ -257,23 +314,48 @@ function PlasmicNavbarPixel__RenderFunc(props: {
                 platform={"nextjs"}
                 title={"links" as const}
               >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__xe5Ck)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"30%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/disuko_website_v_2/images/linkspng2.png",
-                    fullWidth: 160,
-                    fullHeight: 160,
-                    aspectRatio: undefined
-                  }}
-                />
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__xe5Ck)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? ("5%" as const)
+                        : ("30%" as const)
+                    }
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/disuko_website_v_2/images/linkspng2.png",
+                      fullWidth: 160,
+                      fullHeight: 160,
+                      aspectRatio: undefined
+                    }}
+                  />
+                ) : null}
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : false
+                ) ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__hMtC
+                    )}
+                  >
+                    {"Links"}
+                  </div>
+                ) : null}
               </p.PlasmicLink>
             ) : null}
           </Reveal>
@@ -298,23 +380,46 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               platform={"nextjs"}
               title={"portfolio" as const}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__qi9Zc)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"30%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/disuko_website_v_2/images/portfofliopng2.png",
-                  fullWidth: 160,
-                  fullHeight: 150,
-                  aspectRatio: undefined
-                }}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__qi9Zc)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("5%" as const)
+                      : ("30%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/disuko_website_v_2/images/portfofliopng2.png",
+                    fullWidth: 160,
+                    fullHeight: 150,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__pdkl5
+                  )}
+                >
+                  {"Portfolio"}
+                </div>
+              ) : null}
             </p.PlasmicLink>
           </Reveal>
 
@@ -334,23 +439,46 @@ function PlasmicNavbarPixel__RenderFunc(props: {
               platform={"nextjs"}
               title={"merch" as const}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__uzAa6)}
-                displayHeight={"auto" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"30%" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                loading={"lazy" as const}
-                src={{
-                  src: "/plasmic/disuko_website_v_2/images/shirtpng3.png",
-                  fullWidth: 160,
-                  fullHeight: 130,
-                  aspectRatio: undefined
-                }}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__uzAa6)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("5%" as const)
+                      : ("30%" as const)
+                  }
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  loading={"lazy" as const}
+                  src={{
+                    src: "/plasmic/disuko_website_v_2/images/shirtpng3.png",
+                    fullWidth: 160,
+                    fullHeight: 130,
+                    aspectRatio: undefined
+                  }}
+                />
+              ) : null}
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__uR06O
+                  )}
+                >
+                  {"Merch"}
+                </div>
+              ) : null}
             </p.PlasmicLink>
           </Reveal>
         </React.Fragment>

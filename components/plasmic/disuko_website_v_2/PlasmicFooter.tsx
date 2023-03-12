@@ -140,8 +140,16 @@ function PlasmicFooter__RenderFunc(props: {
             <p.PlasmicImg
               alt={""}
               className={classNames(sty.img__jvX8Z)}
-              displayHeight={"40%" as const}
-              displayMaxHeight={"none" as const}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("100%" as const)
+                  : ("40%" as const)
+              }
+              displayMaxHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? ("40px" as const)
+                  : ("none" as const)
+              }
               displayMaxWidth={"none" as const}
               displayMinHeight={"0" as const}
               displayMinWidth={"0" as const}
@@ -157,140 +165,143 @@ function PlasmicFooter__RenderFunc(props: {
           </p.PlasmicLink>
         </div>
 
-        <div className={classNames(projectcss.all, sty.column__taxvx)}>
-          {true ? (
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <div className={classNames(projectcss.all, sty.column__pcS2Q)}>
+            {true ? (
               <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__eBf9G
-                )}
+                data-plasmic-name={"freeBox"}
+                data-plasmic-override={overrides.freeBox}
+                className={classNames(projectcss.all, sty.freeBox)}
               >
-                <React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontWeight: 700 }}
-                  >
-                    {"website © disuko & "}
-                  </span>
-                  <React.Fragment>{""}</React.Fragment>
-                  {
-                    <p.PlasmicLink
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        projectcss.__wab_text,
-                        projectcss.plasmic_default__inline,
-                        sty.link__vlfhD
-                      )}
-                      component={Link}
-                      href={"https://redpandamedia.net" as const}
-                      platform={"nextjs"}
-                    >
-                      <React.Fragment>
-                        <span
-                          className={
-                            "plasmic_default__all plasmic_default__span"
-                          }
-                          style={{ fontWeight: 700 }}
-                        >
-                          {"Red Panda Studios"}
-                        </span>
-                      </React.Fragment>
-                    </p.PlasmicLink>
-                  }
-                  <React.Fragment>{""}</React.Fragment>
-                  <span
-                    className={"plasmic_default__all plasmic_default__span"}
-                    style={{ fontWeight: 700 }}
-                  >
-                    {" 2023"}
-                  </span>
-                </React.Fragment>
-              </div>
-
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___0O7As
-                )}
-                component={Link}
-                href={"https://www.ohhey.gay/gay-gives" as const}
-                platform={"nextjs"}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__u6CL)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"100%" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"56px" as const}
-                  loading={"lazy" as const}
-                  src={{
-                    src: "/plasmic/disuko_website_v_2/images/dotGayRgBpng.png",
-                    fullWidth: 210,
-                    fullHeight: 92,
-                    aspectRatio: undefined
-                  }}
-                />
-              </p.PlasmicLink>
-            </div>
-          ) : null}
-        </div>
-
-        <div className={classNames(projectcss.all, sty.column___2F5Fj)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__mihbh
-            )}
-          >
-            <React.Fragment>
-              <span
-                className={"plasmic_default__all plasmic_default__span"}
-                style={{ fontWeight: 700 }}
-              >
-                {"icons from "}
-              </span>
-              <React.Fragment>{""}</React.Fragment>
-              {
-                <p.PlasmicLink
+                <div
                   className={classNames(
                     projectcss.all,
-                    projectcss.a,
                     projectcss.__wab_text,
-                    projectcss.plasmic_default__inline,
-                    sty.link___8Ukcv
+                    sty.text__eBf9G
                   )}
-                  component={Link}
-                  href={
-                    "https://github.com/konradkalemba/tabler-icons-react" as const
-                  }
-                  platform={"nextjs"}
                 >
                   <React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
                     >
-                      {"tabler"}
+                      {"website © disuko & "}
+                    </span>
+                    <React.Fragment>{""}</React.Fragment>
+                    {
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link__vlfhD
+                        )}
+                        component={Link}
+                        href={"https://redpandamedia.net" as const}
+                        platform={"nextjs"}
+                      >
+                        <React.Fragment>
+                          <span
+                            className={
+                              "plasmic_default__all plasmic_default__span"
+                            }
+                            style={{ fontWeight: 700 }}
+                          >
+                            {"Red Panda Studios"}
+                          </span>
+                        </React.Fragment>
+                      </p.PlasmicLink>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {" 2023"}
                     </span>
                   </React.Fragment>
+                </div>
+
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link___0O7As
+                  )}
+                  component={Link}
+                  href={"https://www.ohhey.gay/gay-gives" as const}
+                  platform={"nextjs"}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__u6CL)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"56px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/disuko_website_v_2/images/dotGayRgBpng.png",
+                      fullWidth: 210,
+                      fullHeight: 92,
+                      aspectRatio: undefined
+                    }}
+                  />
                 </p.PlasmicLink>
-              }
-              <React.Fragment>{""}</React.Fragment>
-            </React.Fragment>
+              </div>
+            ) : null}
           </div>
-        </div>
+        ) : null}
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <div className={classNames(projectcss.all, sty.column__pph7)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__mihbh
+              )}
+            >
+              <React.Fragment>
+                <span
+                  className={"plasmic_default__all plasmic_default__span"}
+                  style={{ fontWeight: 700 }}
+                >
+                  {"icons from "}
+                </span>
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link___8Ukcv
+                    )}
+                    component={Link}
+                    href={
+                      "https://github.com/konradkalemba/tabler-icons-react" as const
+                    }
+                    platform={"nextjs"}
+                  >
+                    <React.Fragment>
+                      <span
+                        className={"plasmic_default__all plasmic_default__span"}
+                        style={{ fontWeight: 700 }}
+                      >
+                        {"tabler"}
+                      </span>
+                    </React.Fragment>
+                  </p.PlasmicLink>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </div>
+          </div>
+        ) : null}
       </p.Stack>
     </div>
   ) as React.ReactElement | null;

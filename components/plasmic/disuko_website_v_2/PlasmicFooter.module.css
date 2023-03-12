@@ -1,15 +1,25 @@
 .root {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   width: 100%;
   position: relative;
   background: none;
   backdrop-filter: brightness(80%) blur(4px);
   box-shadow: 0px 4px 16px 0px #00000033;
+  justify-content: center;
   min-width: 0;
   -webkit-backdrop-filter: brightness(80%) blur(4px);
   padding: 0px 64px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
 }
 .columns {
   display: flex;
@@ -18,9 +28,11 @@
   flex-direction: row;
   width: 100%;
   height: auto;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-grow: 1;
   backdrop-filter: none;
+  left: auto;
+  top: auto;
   min-width: 0;
   -webkit-backdrop-filter: none;
 }
@@ -33,13 +45,13 @@
   width: calc(100% + 64px);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(3n + 1) {
-  width: calc((100% - 3 * 64px) * 2 / 12);
+  width: calc((100% - 3 * 64px) * 4 / 12);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(3n + 2) {
-  width: calc((100% - 3 * 64px) * 5 / 12);
+  width: calc((100% - 3 * 64px) * 4 / 12);
 }
 .columns > :global(.__wab_flex-container) > :nth-child(3n + 3) {
-  width: calc((100% - 3 * 64px) * 5 / 12);
+  width: calc((100% - 3 * 64px) * 4 / 12);
 }
 .columns > :global(.__wab_flex-container) > *,
 .columns > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -65,13 +77,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 0;
-    margin-top: calc(0px - 64px);
-    height: calc(100% + 64px);
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 64px) * 12 / 12);
+    width: calc((100% - 1 * 0px) * 12 / 12);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -83,7 +97,8 @@
     > :global(.__wab_slot)
     > picture
     > img {
-    margin-top: 64px;
+    margin-left: 0px;
+    margin-top: 0px;
   }
 }
 .column__laFb {
@@ -99,6 +114,12 @@
   min-width: 0;
   padding: 8px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__laFb {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .disuko {
   position: relative;
   display: flex;
@@ -106,6 +127,15 @@
   align-items: center;
   justify-content: center;
   height: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .disuko {
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-height: 56px;
+    width: 100%;
+    min-width: 0;
+  }
 }
 .img__jvX8Z {
   object-fit: contain;
@@ -120,7 +150,14 @@
 .img__jvX8Z > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
-.column__taxvx {
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__jvX8Z {
+    height: 100%;
+    max-height: 40px;
+    min-height: 0;
+  }
+}
+.column__pcS2Q {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -128,9 +165,14 @@
   height: auto;
   max-width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__pcS2Q {
+    display: flex;
+  }
 }
 .freeBox {
   display: flex;
@@ -152,6 +194,16 @@
   font-family: "Keqima";
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__eBf9G {
+    text-align: center;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .link__vlfhD {
+    text-align: center;
+  }
+}
 .link___0O7As {
   position: relative;
   display: flex;
@@ -170,7 +222,7 @@
 .img__u6CL > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.column___2F5Fj {
+.column__pph7 {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -182,6 +234,11 @@
   min-width: 0;
   padding: 8px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__pph7 {
+    display: flex;
+  }
+}
 .text__mihbh {
   position: relative;
   width: 100%;
@@ -191,4 +248,9 @@
   text-align: right;
   font-family: "Keqima";
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__mihbh {
+    text-align: center;
+  }
 }

@@ -113,7 +113,7 @@ function PlasmicRetroDisuko__RenderFunc(props: {
         sty.root
       )}
       component={Link}
-      href={"https://disuko.gay/retro" as const}
+      href={`/retro`}
       platform={"nextjs"}
       target={"_blank" as const}
     >

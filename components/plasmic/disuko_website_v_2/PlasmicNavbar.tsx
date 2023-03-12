@@ -37,6 +37,8 @@ import {
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 
+import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_disuko_website_v_2.module.css"; // plasmic-import: bsHvoheJaXyaeWhnCxRakT/projectcss
@@ -112,6 +114,10 @@ function PlasmicNavbar__RenderFunc(props: {
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantswajuQ4R1DeAga()
+  });
+
   return (
     <NavigationBar
       data-plasmic-name={"root"}
@@ -161,6 +167,9 @@ function PlasmicNavbar__RenderFunc(props: {
           role={"img"}
         />
       }
+      forceOpenMenu={
+        hasVariant(globalVariants, "screen", "mobileOnly") ? true : undefined
+      }
       itemsGap={8 as const}
       menuItems={
         <React.Fragment>
@@ -173,10 +182,28 @@ function PlasmicNavbar__RenderFunc(props: {
             platform={"nextjs"}
             title={"home" as const}
           >
-            <HomesvgIcon
-              className={classNames(projectcss.all, sty.svg___3MZqc)}
-              role={"img"}
-            />
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <HomesvgIcon
+                className={classNames(projectcss.all, sty.svg___3MZqc)}
+                role={"img"}
+              />
+            ) : null}
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+            ) ? (
+              <h5
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h5,
+                  projectcss.__wab_text,
+                  sty.h5__jr98
+                )}
+              >
+                {"home"}
+              </h5>
+            ) : null}
           </p.PlasmicLink>
 
           <p.PlasmicLink
@@ -192,6 +219,21 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.svg__r4C8D)}
               role={"img"}
             />
+
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+            ) ? (
+              <h5
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h5,
+                  projectcss.__wab_text,
+                  sty.h5__tjFCh
+                )}
+              >
+                {"music"}
+              </h5>
+            ) : null}
           </p.PlasmicLink>
 
           {true ? (
@@ -208,6 +250,23 @@ function PlasmicNavbar__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.svg__kcwLa)}
                 role={"img"}
               />
+
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : false
+              ) ? (
+                <h5
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h5,
+                    projectcss.__wab_text,
+                    sty.h5__d3LsG
+                  )}
+                >
+                  {"links"}
+                </h5>
+              ) : null}
             </p.PlasmicLink>
           ) : null}
 
@@ -224,6 +283,21 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.svg__dMqJq)}
               role={"img"}
             />
+
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+            ) ? (
+              <h5
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h5,
+                  projectcss.__wab_text,
+                  sty.h5__dyYUh
+                )}
+              >
+                {"portfolio"}
+              </h5>
+            ) : null}
           </p.PlasmicLink>
 
           <p.PlasmicLink
@@ -239,6 +313,21 @@ function PlasmicNavbar__RenderFunc(props: {
               className={classNames(projectcss.all, sty.svg__b6MrX)}
               role={"img"}
             />
+
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+            ) ? (
+              <h5
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h5,
+                  projectcss.__wab_text,
+                  sty.h5__zybbD
+                )}
+              >
+                {"merch"}
+              </h5>
+            ) : null}
           </p.PlasmicLink>
         </React.Fragment>
       }
