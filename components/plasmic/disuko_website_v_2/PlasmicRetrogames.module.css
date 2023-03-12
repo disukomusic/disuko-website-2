@@ -129,7 +129,7 @@
     flex-grow: 1;
     min-width: 0;
     min-height: 0;
-    display: flex;
+    display: block;
   }
 }
 .freeBox__jeJgv {
@@ -175,6 +175,17 @@
     width: auto;
   }
 }
+.text__iDpS6 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: none;
+  font-family: "Press Start 2P";
+  color: var(--token-4g29keipI);
+  left: auto;
+  top: auto;
+  text-align: center;
+}
 .freeBox___32YJg {
   display: flex;
   position: relative;
@@ -190,7 +201,7 @@
   padding: 10px;
   margin: 10px;
 }
-.text__iDpS6 {
+.text___9OXTv {
   position: relative;
   width: auto;
   height: auto;

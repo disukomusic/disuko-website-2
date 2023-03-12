@@ -47,6 +47,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_disuko_website_v_2.module.css"; // plasmic-import: bsHvoheJaXyaeWhnCxRakT/projectcss
 import sty from "./PlasmicLinks.module.css"; // plasmic-import: 2QM518ijxs/css
 
+import HeadphonessvgIcon from "./icons/PlasmicIcon__Headphonessvg"; // plasmic-import: yb2-zw2oZD/icon
 import BrandYoutubesvgIcon from "./icons/PlasmicIcon__BrandYoutubesvg"; // plasmic-import: 8iuJ_X12Ok/icon
 import PigMoneysvgIcon from "./icons/PlasmicIcon__PigMoneysvg"; // plasmic-import: HQAqXLuGsk/icon
 import BrandSpotifysvgIcon from "./icons/PlasmicIcon__BrandSpotifysvg"; // plasmic-import: 15ld03NlrL/icon
@@ -250,6 +251,53 @@ function PlasmicLinks__RenderFunc(props: {
             ) : null}
 
             <Tilt
+              className={classNames("__wab_instance", sty.tilt__i7Qya)}
+              glareEnable={false}
+              gyroscope={true}
+              tiltMaxAngleX={10 as const}
+              tiltMaxAngleY={10 as const}
+              tiltReverse={true}
+              trackOnWindow={false}
+            >
+              <p.PlasmicLink
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__e9YCi
+                )}
+                component={Link}
+                href={
+                  "https://distrokid.com/hyperfollow/disuko/with-you" as const
+                }
+                platform={"nextjs"}
+                target={"_blank" as const}
+              >
+                <div className={classNames(projectcss.all, sty.columns__c30ZV)}>
+                  <div className={classNames(projectcss.all, sty.column__lrQ6)}>
+                    <HeadphonessvgIcon
+                      className={classNames(projectcss.all, sty.svg__bwkcs)}
+                      role={"img"}
+                    />
+                  </div>
+
+                  <div
+                    className={classNames(projectcss.all, sty.column___9X7R6)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__sbX9V
+                      )}
+                    >
+                      {"stream: with you"}
+                    </div>
+                  </div>
+                </div>
+              </p.PlasmicLink>
+            </Tilt>
+
+            <Tilt
               className={classNames("__wab_instance", sty.tilt__z0Qvg)}
               glareEnable={false}
               gyroscope={true}
@@ -265,8 +313,9 @@ function PlasmicLinks__RenderFunc(props: {
                   sty.link__fJgzI
                 )}
                 component={Link}
-                href={"https://www.youtube.com/watch?v=Q8zsozadw8g" as const}
+                href={"https://www.youtube.com/watch?v=vGb4fwgjvPo" as const}
                 platform={"nextjs"}
+                target={"_blank" as const}
               >
                 <div
                   className={classNames(projectcss.all, sty.columns___1IRvS)}
@@ -290,51 +339,7 @@ function PlasmicLinks__RenderFunc(props: {
                         sty.text__o9Dko
                       )}
                     >
-                      {"camellia Ashed Wings Reaction"}
-                    </div>
-                  </div>
-                </div>
-              </p.PlasmicLink>
-            </Tilt>
-
-            <Tilt
-              className={classNames("__wab_instance", sty.tilt__i7Qya)}
-              glareEnable={false}
-              gyroscope={true}
-              tiltMaxAngleX={10 as const}
-              tiltMaxAngleY={10 as const}
-              tiltReverse={true}
-              trackOnWindow={false}
-            >
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__e9YCi
-                )}
-                component={Link}
-                href={"https://www.youtube.com/watch?v=lrPjNaRol44" as const}
-                platform={"nextjs"}
-              >
-                <div className={classNames(projectcss.all, sty.columns__c30ZV)}>
-                  <div className={classNames(projectcss.all, sty.column__lrQ6)}>
-                    <BrandYoutubesvgIcon
-                      className={classNames(projectcss.all, sty.svg__bwkcs)}
-                      role={"img"}
-                    />
-                  </div>
-
-                  <div
-                    className={classNames(projectcss.all, sty.column___9X7R6)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__sbX9V
-                      )}
-                    >
-                      {"stream: with you music video"}
+                      {"disuko dating simulator trailer"}
                     </div>
                   </div>
                 </div>

@@ -61,7 +61,6 @@ export type PlasmicPortfolio__OverridesType = {
   navbar?: p.Flex<typeof Navbar>;
   main?: p.Flex<"div">;
   headshot?: p.Flex<typeof p.PlasmicImg>;
-  span?: p.Flex<"span">;
   columns?: p.Flex<"div">;
   music?: p.Flex<"div">;
   officialReleases?: p.Flex<"div">;
@@ -222,7 +221,7 @@ function PlasmicPortfolio__RenderFunc(props: {
               displayWidth={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? ("127.05%" as const)
-                  : ("40.36%" as const)
+                  : ("37%" as const)
               }
               loading={"eager" as const}
               src={{
@@ -257,29 +256,9 @@ function PlasmicPortfolio__RenderFunc(props: {
                 sty.text__odBgF
               )}
             >
-              <React.Fragment>
-                <React.Fragment>
-                  {"music producer, creative digital media enthusiast\n~\n"}
-                </React.Fragment>
-                {
-                  <span
-                    data-plasmic-name={"span"}
-                    data-plasmic-override={overrides.span}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.span,
-                      projectcss.__wab_text,
-                      projectcss.plasmic_default__inline,
-                      sty.span
-                    )}
-                  >
-                    {
-                      "Chatham university - immersive media major, music technology minor"
-                    }
-                  </span>
-                }
-                <React.Fragment>{"\n~\ndisukomusic@gmail.com"}</React.Fragment>
-              </React.Fragment>
+              {
+                "music producer, creative digital media enthusiast\n~\nChatham university - immersive media major, music technology minor\n~\ndisukomusic@gmail.com"
+              }
             </div>
           </p.Stack>
 
@@ -1498,7 +1477,6 @@ const PlasmicDescendants = {
     "navbar",
     "main",
     "headshot",
-    "span",
     "columns",
     "music",
     "officialReleases",
@@ -1521,9 +1499,8 @@ const PlasmicDescendants = {
     "footer"
   ],
   navbar: ["navbar"],
-  main: ["main", "headshot", "span"],
+  main: ["main", "headshot"],
   headshot: ["headshot"],
-  span: ["span"],
   columns: [
     "columns",
     "music",
@@ -1587,7 +1564,6 @@ type NodeDefaultElementType = {
   navbar: typeof Navbar;
   main: "div";
   headshot: typeof p.PlasmicImg;
-  span: "span";
   columns: "div";
   music: "div";
   officialReleases: "div";
@@ -1674,7 +1650,6 @@ export const PlasmicPortfolio = Object.assign(
     navbar: makeNodeComponent("navbar"),
     main: makeNodeComponent("main"),
     headshot: makeNodeComponent("headshot"),
-    span: makeNodeComponent("span"),
     columns: makeNodeComponent("columns"),
     music: makeNodeComponent("music"),
     officialReleases: makeNodeComponent("officialReleases"),

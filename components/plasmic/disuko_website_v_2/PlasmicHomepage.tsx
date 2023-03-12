@@ -38,7 +38,6 @@ import {
 import Navbar from "../../Navbar"; // plasmic-import: _De9lHvhQM/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import RetroDisuko from "../../RetroDisuko"; // plasmic-import: 26hRODzg9S/component
-import { TimelineWrapper } from "@plasmicpkgs/react-twitter-widgets"; // plasmic-import: x2j0abJR_t/codeComponent
 import Tilt from "@plasmicpkgs/react-parallax-tilt"; // plasmic-import: PfY466VIuq/codeComponent
 import Footer from "../../Footer"; // plasmic-import: phAOjgqEmd/component
 
@@ -74,7 +73,6 @@ export type PlasmicHomepage__OverridesType = {
   youtube?: p.Flex<"a"> & Partial<LinkProps>;
   instagram?: p.Flex<"a"> & Partial<LinkProps>;
   twitter?: p.Flex<"a"> & Partial<LinkProps>;
-  timeline?: p.Flex<typeof TimelineWrapper>;
   greeting3?: p.Flex<"div">;
   greeting4?: p.Flex<"div">;
   greeting5?: p.Flex<"div">;
@@ -304,9 +302,27 @@ function PlasmicHomepage__RenderFunc(props: {
                                   sty.greeting2
                                 )}
                               >
-                                {
-                                  "i'm disuko, i love all forms of digital media and aim to express myself through music, videography, and design. i hope you enjoy my work!"
-                                }
+                                <React.Fragment>
+                                  <span
+                                    className={
+                                      "plasmic_default__all plasmic_default__span"
+                                    }
+                                    style={{ fontWeight: 700 }}
+                                  >
+                                    {
+                                      "i'm disuko, i'm an enthusiast of all things involving digital art. i love to express myself through music, design, and film. i hope you enjoy my work!"
+                                    }
+                                  </span>
+                                  <React.Fragment>{"\n"}</React.Fragment>
+                                  <span
+                                    className={
+                                      "plasmic_default__all plasmic_default__span"
+                                    }
+                                    style={{ fontWeight: 700 }}
+                                  >
+                                    {""}
+                                  </span>
+                                </React.Fragment>
                               </div>
 
                               <div
@@ -389,23 +405,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               </div>
                             </div>
                           ) : null}
-                          {(
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? true
-                              : true
-                          ) ? (
-                            <TimelineWrapper
-                              data-plasmic-name={"timeline"}
-                              data-plasmic-override={overrides.timeline}
-                              chrome={["nofooter"]}
-                              className={classNames(
-                                "__wab_instance",
-                                sty.timeline
-                              )}
-                              tweetLimit={1 as const}
-                              url={"https://twitter.com/disukomusic" as const}
-                            />
-                          ) : null}
                         </div>
                       ) : null}
                     </div>
@@ -469,7 +468,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   <p.PlasmicImg
                                     alt={""}
                                     className={classNames(sty.img__tSjvo)}
-                                    displayHeight={"100%" as const}
+                                    displayHeight={"202px" as const}
                                     displayMaxHeight={"none" as const}
                                     displayMaxWidth={"100%" as const}
                                     displayMinHeight={"0" as const}
@@ -635,7 +634,7 @@ function PlasmicHomepage__RenderFunc(props: {
                               <p.PlasmicImg
                                 alt={""}
                                 className={classNames(sty.img___6Wf1)}
-                                displayHeight={"100%" as const}
+                                displayHeight={"202px" as const}
                                 displayMaxHeight={"none" as const}
                                 displayMaxWidth={"100%" as const}
                                 displayMinHeight={"0" as const}
@@ -1365,7 +1364,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.text__vM57J
                   )}
                 >
-                  {"always open for inquires!"}
+                  {"always free to chat!"}
                 </div>
 
                 <main
@@ -1399,6 +1398,26 @@ function PlasmicHomepage__RenderFunc(props: {
                     {"send email"}
                   </div>
                 </p.PlasmicLink>
+
+                <main
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.main__auIvg
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>
+                      {"you can also contact me over discord at "}
+                    </React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ textDecorationLine: "underline" }}
+                    >
+                      {"disuko#8993"}
+                    </span>
+                  </React.Fragment>
+                </main>
               </div>
             </p.Stack>
 
@@ -1427,7 +1446,6 @@ const PlasmicDescendants = {
     "youtube",
     "instagram",
     "twitter",
-    "timeline",
     "greeting3",
     "greeting4",
     "greeting5",
@@ -1459,7 +1477,6 @@ const PlasmicDescendants = {
     "youtube",
     "instagram",
     "twitter",
-    "timeline",
     "greeting3",
     "greeting4",
     "greeting5",
@@ -1486,7 +1503,6 @@ const PlasmicDescendants = {
     "youtube",
     "instagram",
     "twitter",
-    "timeline",
     "greeting3",
     "greeting4",
     "greeting5",
@@ -1501,7 +1517,6 @@ const PlasmicDescendants = {
   youtube: ["youtube"],
   instagram: ["instagram"],
   twitter: ["twitter"],
-  timeline: ["timeline"],
   greeting3: ["greeting3"],
   greeting4: ["greeting4"],
   greeting5: ["greeting5"],
@@ -1537,7 +1552,6 @@ type NodeDefaultElementType = {
   youtube: "a";
   instagram: "a";
   twitter: "a";
-  timeline: typeof TimelineWrapper;
   greeting3: "div";
   greeting4: "div";
   greeting5: "div";
@@ -1630,7 +1644,6 @@ export const PlasmicHomepage = Object.assign(
     youtube: makeNodeComponent("youtube"),
     instagram: makeNodeComponent("instagram"),
     twitter: makeNodeComponent("twitter"),
-    timeline: makeNodeComponent("timeline"),
     greeting3: makeNodeComponent("greeting3"),
     greeting4: makeNodeComponent("greeting4"),
     greeting5: makeNodeComponent("greeting5"),

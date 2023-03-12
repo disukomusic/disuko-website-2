@@ -248,9 +248,17 @@ function PlasmicRetrogames__RenderFunc(props: {
                             sty.text__oj5Ek
                           )}
                         >
-                          {
-                            "PAGE IS UNDER CONSTRUCTION. ALL CONTENT IS PLACEHOLDER."
-                          }
+                          {"UNDER CONSTRUCTION"}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__iDpS6
+                          )}
+                        >
+                          {"all items are placeholders!"}
                         </div>
                       </div>
                     ) : null}
@@ -265,7 +273,7 @@ function PlasmicRetrogames__RenderFunc(props: {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__iDpS6
+                          sty.text___9OXTv
                         )}
                       >
                         {

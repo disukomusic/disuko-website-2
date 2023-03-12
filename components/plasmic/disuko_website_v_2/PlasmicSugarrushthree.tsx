@@ -36,6 +36,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants as useScreenVariantswajuQ4R1DeAga } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: WajuQ4R1DeAga/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_disuko_website_v_2.module.css"; // plasmic-import: bsHvoheJaXyaeWhnCxRakT/projectcss
@@ -53,6 +55,8 @@ export const PlasmicSugarrushthree__ArgProps = new Array<ArgPropType>();
 export type PlasmicSugarrushthree__OverridesType = {
   root?: p.Flex<"div">;
   finalAlbumSubjectToChange2023?: p.Flex<typeof p.PlasmicImg>;
+  finalAlbumSubjectToChange2024?: p.Flex<typeof p.PlasmicImg>;
+  finalAlbumSubjectToChange2025?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultSugarrushthreeProps {}
@@ -94,6 +98,10 @@ function PlasmicSugarrushthree__RenderFunc(props: {
 
   const currentUser = p.useCurrentUser?.() || {};
   const [$queries, setDollarQueries] = React.useState({});
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantswajuQ4R1DeAga()
+  });
 
   return (
     <React.Fragment>
@@ -143,7 +151,11 @@ function PlasmicSugarrushthree__RenderFunc(props: {
             displayMaxWidth={"100%" as const}
             displayMinHeight={"0" as const}
             displayMinWidth={"0" as const}
-            displayWidth={"auto" as const}
+            displayWidth={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? ("347px" as const)
+                : ("701px" as const)
+            }
             loading={"lazy" as const}
             src={{
               src: "/plasmic/disuko_website_v_2/images/sugarRushThreeTeaserpng.png",
@@ -152,6 +164,53 @@ function PlasmicSugarrushthree__RenderFunc(props: {
               aspectRatio: undefined
             }}
           />
+
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <p.PlasmicImg
+              data-plasmic-name={"finalAlbumSubjectToChange2024"}
+              data-plasmic-override={overrides.finalAlbumSubjectToChange2024}
+              alt={""}
+              className={classNames(sty.finalAlbumSubjectToChange2024)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"701px" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/disuko_website_v_2/images/sugarRushThreeTeaserpng.png",
+                fullWidth: 2064,
+                fullHeight: 1251,
+                aspectRatio: undefined
+              }}
+            />
+          ) : null}
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : false
+          ) ? (
+            <p.PlasmicImg
+              data-plasmic-name={"finalAlbumSubjectToChange2025"}
+              data-plasmic-override={overrides.finalAlbumSubjectToChange2025}
+              alt={""}
+              className={classNames(sty.finalAlbumSubjectToChange2025)}
+              displayHeight={"auto" as const}
+              displayMaxHeight={"none" as const}
+              displayMaxWidth={"100%" as const}
+              displayMinHeight={"0" as const}
+              displayMinWidth={"0" as const}
+              displayWidth={"701px" as const}
+              loading={"lazy" as const}
+              src={{
+                src: "/plasmic/disuko_website_v_2/images/sugarRushThreeTeaserpng.png",
+                fullWidth: 2064,
+                fullHeight: 1251,
+                aspectRatio: undefined
+              }}
+            />
+          ) : null}
         </div>
       </div>
     </React.Fragment>
@@ -159,8 +218,15 @@ function PlasmicSugarrushthree__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "finalAlbumSubjectToChange2023"],
-  finalAlbumSubjectToChange2023: ["finalAlbumSubjectToChange2023"]
+  root: [
+    "root",
+    "finalAlbumSubjectToChange2023",
+    "finalAlbumSubjectToChange2024",
+    "finalAlbumSubjectToChange2025"
+  ],
+  finalAlbumSubjectToChange2023: ["finalAlbumSubjectToChange2023"],
+  finalAlbumSubjectToChange2024: ["finalAlbumSubjectToChange2024"],
+  finalAlbumSubjectToChange2025: ["finalAlbumSubjectToChange2025"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -168,6 +234,8 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   finalAlbumSubjectToChange2023: typeof p.PlasmicImg;
+  finalAlbumSubjectToChange2024: typeof p.PlasmicImg;
+  finalAlbumSubjectToChange2025: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -233,6 +301,12 @@ export const PlasmicSugarrushthree = Object.assign(
     // Helper components rendering sub-elements
     finalAlbumSubjectToChange2023: makeNodeComponent(
       "finalAlbumSubjectToChange2023"
+    ),
+    finalAlbumSubjectToChange2024: makeNodeComponent(
+      "finalAlbumSubjectToChange2024"
+    ),
+    finalAlbumSubjectToChange2025: makeNodeComponent(
+      "finalAlbumSubjectToChange2025"
     ),
 
     // Metadata about props expected for PlasmicSugarrushthree
